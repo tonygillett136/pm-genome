@@ -1,0 +1,18 @@
+{
+  "name": "pm-genome-scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "normalize": "tsx 00-normalize.ts",
+    "extract": "tsx 01-extract.ts",
+    "synthesize": "tsx 02-synthesize-archetypes.ts",
+    "score": "tsx 03-score-leaders.ts",
+    "quiz": "tsx 04-generate-quiz.ts",
+    "validate": "tsx 05-validate.ts",
+    "pipeline": "tsx 00-normalize.ts && tsx 01-extract.ts && tsx 02-synthesize-archetypes.ts && tsx 03-score-leaders.ts && tsx 04-generate-quiz.ts && tsx 05-validate.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "tsx": "^4.19.0"
+  }
+}

@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { DIMENSIONS } from '../lib/constants';
+---
+
+<BaseLayout title="Methodology" description="How PM Genome works: our transcript analysis methodology, dimension framework, and archetype discovery process.">
+  <div class="mx-auto max-w-3xl px-4 py-16">
+    <h1 class="mb-4 text-4xl font-extrabold tracking-tight">Methodology</h1>
+    <p class="mb-12 text-lg text-text-muted">
+      How we turned 302 podcast transcripts into a product leadership assessment.
+    </p>
+
+    <!-- Step 1 -->
+    <section class="mb-12">
+      <h2 class="mb-4 text-2xl font-bold">1. Transcript Analysis</h2>
+      <p class="mb-4 text-text-muted">
+        We analyzed every episode of Lenny's Podcast — 302 transcripts totaling 4.5 million words
+        and 186,000 lines of conversation. Each transcript was parsed, normalized, and cleaned
+        (sponsor reads removed, speaker names resolved, multi-guest episodes split).
+      </p>
+      <p class="text-text-muted">
+        For each leader, we extracted key themes, leadership principles, notable quotes,
+        and scored them across 6 dimensions based on what they discuss, emphasize, and advocate.
+      </p>
+    </section>
+
+    <!-- Step 2 -->
+    <section class="mb-12">
+      <h2 class="mb-4 text-2xl font-bold">2. The 6 Dimensions</h2>
+      <p class="mb-6 text-text-muted">
+        Our dimension framework captures the key axes of product leadership variation
+        observed across the podcast corpus. Every leader and every quiz response
+        is scored on these 6 dimensions:
+      </p>
+      <div class="space-y-4">
+        {DIMENSIONS.map((dim) => (
+          <div class="rounded-xl border border-border bg-bg-card p-5">
+            <div class="flex items-center gap-3">
+              <div class="h-3 w-3 rounded-full" style={`background-color: ${dim.color}`} />
+              <h3 class="font-semibold">{dim.name}</h3>
+            </div>
+            <p class="mt-2 text-sm text-text-muted">{dim.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section class="mb-12">
+      <h2 class="mb-4 text-2xl font-bold">3. Archetype Discovery</h2>
+      <p class="mb-4 text-text-muted">
+        With each leader scored across 6 dimensions, we ran k-means clustering on the resulting
+        6-dimensional vectors. This revealed 7 natural clusters — groups of leaders with similar
+        leadership profiles that emerged organically from the data.
+      </p>
+      <p class="mb-4 text-text-muted">
+        Each cluster was then characterized by examining its centroid (average dimension scores)
+        and representative leaders. For repeat guests, we used a recency-weighted average
+        (most recent appearance weighted 1.5x) to capture how their perspective evolved.
+      </p>
+      <p class="text-text-muted">
+        The archetypes are data-driven — they weren't predetermined. We discovered what the
+        transcript data naturally reveals about the structure of product leadership styles.
+      </p>
+    </section>
+
+    <!-- Step 4 -->
+    <section class="mb-12">
+      <h2 class="mb-4 text-2xl font-bold">4. The Assessment</h2>
+      <p class="mb-4 text-text-muted">
+        The 24-question quiz presents realistic product scenarios inspired by real situations
+        discussed on the podcast. Each question has 4 options, and each option maps to a
+        weighted combination of dimensions — there are no wrong answers.
+      </p>
+      <p class="mb-4 text-text-muted">
+        Questions are organized in 3 tiers of escalating complexity:
+      </p>
+      <ul class="mb-4 space-y-2 text-text-muted">
+        <li class="flex items-start gap-2">
+          <span class="text-vision">1.</span>
+          <span><strong>The Daily Grind</strong> (Q1-8) — Common PM situations</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-craft">2.</span>
+          <span><strong>The Hard Tradeoffs</strong> (Q9-16) — Genuine tensions with no obvious answer</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-empathy">3.</span>
+          <span><strong>The Defining Moments</strong> (Q17-24) — High-stakes, career-shaping decisions</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Step 5 -->
+    <section class="mb-12">
+      <h2 class="mb-4 text-2xl font-bold">5. Matching & Results</h2>
+      <p class="mb-4 text-text-muted">
+        Your quiz answers produce a 6-dimensional score vector. We then compute
+        cosine similarity between your vector and each archetype centroid to find
+        your primary (and optional secondary) archetype.
+      </p>
+      <p class="text-text-muted">
+        The same cosine similarity is used to match you with specific leaders — the
+        people whose interview transcripts reveal a product leadership style most
+        similar to yours. Your bottom-scoring dimensions become your "blind spots,"
+        and we curate learning paths from the podcast library to address them.
+      </p>
+    </section>
+
+    <!-- Limitations -->
+    <section class="mb-12">
+      <h2 class="mb-4 text-2xl font-bold">Limitations & Caveats</h2>
+      <div class="rounded-xl border border-border bg-bg-card p-6">
+        <ul class="space-y-3 text-sm text-text-muted">
+          <li>This is a fun exploratory tool, not a validated psychometric instrument.</li>
+          <li>Dimension scores are based on what leaders <em>discuss</em> on a podcast, which may not fully represent their actual skill profile.</li>
+          <li>Interview context matters — some leaders appeared for specific topics, which may skew their profile toward that dimension.</li>
+          <li>The 7 archetypes are a useful simplification, not a rigid taxonomy. Most leaders (and you) are a blend.</li>
+          <li>Self-assessments always carry bias. Your results reflect how you think about your approach, not necessarily how you act in practice.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Attribution -->
+    <section>
+      <h2 class="mb-4 text-2xl font-bold">Attribution</h2>
+      <p class="text-text-muted">
+        This project is built from the publicly released transcripts of
+        <a href="https://www.lennysnewsletter.com/podcast" class="text-text underline decoration-border hover:decoration-text-muted" target="_blank" rel="noopener">Lenny's Podcast</a>
+        by Lenny Rachitsky. PM Genome is an independent project and is not affiliated
+        with or endorsed by Lenny Rachitsky.
+      </p>
+    </section>
+  </div>
+</BaseLayout>

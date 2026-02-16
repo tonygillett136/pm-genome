@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { DIMENSIONS } from '../../lib/constants';
+import leadersData from '../../data/leaders.json';
+import archetypesData from '../../data/archetypes.json';
+
+export function getStaticPaths() {
+  const leaders = (leadersData as any).leaders ?? [];
+  const archetypes = archetypesData.archetypes ?? [];
+
+  if (!leaders.length) return [];
+
+  const archetypeMap = new Map(archetypes.map((a: any) => [a.id, a]));
+
+  return leaders.map((leader: any) => ({
+    params: { slug: leader.slug },
+    props: {
+      leader,
+      primaryArchetype: archetypeMap.get(leader.primaryArchetype),
+      secondaryArchetype: leader.secondaryArchetype ? archetypeMap.get(leader.secondaryArchetype) : null,
+    },
+  }));
+}
+
+const { leader, primaryArchetype, secondaryArchetype } = Astro.props;
+---
+
+<BaseLayout
+  title={leader.name}
+  description={`${leader.name}'s product leadership profile. Discover their archetype and key insights from Lenny's Podcast.`}
+>
+  <div class="mx-auto max-w-4xl px-4 py-16">
+    <div class="mb-12">
+      <a href="/leaders" class="mb-4 inline-block text-sm text-text-muted hover:text-text">&larr; All Leaders</a>
+      <h1 class="mb-2 text-4xl font-extrabold tracking-tight">{leader.name}</h1>
+      <p class="text-lg text-text-muted">
+        {leader.title}{leader.company ? ` at ${leader.company}` : ''}
+      </p>
+      {leader.bio && (
+        <p class="mt-4 text-text-muted">{leader.bio}</p>
+      )}
+      <div class="mt-4 flex flex-wrap gap-2">
+        {primaryArchetype && (
+          <a
+            href={`/archetypes/${primaryArchetype.id}`}
+            class="rounded-lg bg-vision/10 px-3 py-1.5 text-sm font-medium text-vision hover:bg-vision/20"
+          >
+            {primaryArchetype.name}
+          </a>
+        )}
+        {secondaryArchetype && (
+          <a
+            href={`/archetypes/${secondaryArchetype.id}`}
+            class="rounded-lg bg-team/10 px-3 py-1.5 text-sm font-medium text-team hover:bg-team/20"
+          >
+            {secondaryArchetype.name}
+          </a>
+        )}
+        {leader.appearances > 1 && (
+          <span class="rounded-lg bg-bg-card px-3 py-1.5 text-sm text-text-muted">
+            {leader.appearances} appearances
+          </span>
+        )}
+      </div>
+    </div>
+
+    <section class="mb-12">
+      <h2 class="mb-4 text-lg font-semibold">Dimension Profile</h2>
+      <div class="rounded-xl border border-border bg-bg-card p-6">
+        <div class="space-y-3">
+          {DIMENSIONS.map((dim) => {
+            const score = leader.dimensions?.[dim.id] ?? 0;
+            return (
+              <div>
+                <div class="mb-1 flex items-center justify-between text-sm">
+                  <span>{dim.name}</span>
+                  <span style={`color: ${dim.color}`}>{Math.round(score * 100)}%</span>
+                </div>
+                <div class="h-2 overflow-hidden rounded-full bg-border">
+                  <div
+                    class="h-full rounded-full"
+                    style={`width: ${score * 100}%; background-color: ${dim.color}`}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    {leader.keyThemes?.length > 0 && (
+      <section class="mb-12">
+        <h2 class="mb-4 text-lg font-semibold">Key Themes</h2>
+        <div class="flex flex-wrap gap-2">
+          {leader.keyThemes.map((theme: string) => (
+            <span class="rounded-lg border border-border bg-bg-card px-3 py-1.5 text-sm">
+              {theme}
+            </span>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {leader.episodeSummary && (
+      <section class="mb-12">
+        <h2 class="mb-4 text-lg font-semibold">Episode Summary</h2>
+        <p class="leading-relaxed text-text-muted">{leader.episodeSummary}</p>
+      </section>
+    )}
+
+    {leader.leadershipPrinciples?.length > 0 && (
+      <section class="mb-12">
+        <h2 class="mb-4 text-lg font-semibold">Leadership Principles</h2>
+        <ul class="space-y-3">
+          {leader.leadershipPrinciples.map((principle: string) => (
+            <li class="flex items-start gap-3 rounded-xl border border-border bg-bg-card p-4">
+              <span class="mt-0.5 text-vision">&rarr;</span>
+              <span>{principle}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {leader.notableQuotes?.length > 0 && (
+      <section class="mb-12">
+        <h2 class="mb-4 text-lg font-semibold">Notable Quotes</h2>
+        <div class="space-y-4">
+          {leader.notableQuotes.map((q: any) => (
+            <blockquote class="rounded-xl border border-border bg-bg-card p-5">
+              <p class="mb-2 italic leading-relaxed">"{q.text || q.quote}"</p>
+              {q.context && (
+                <cite class="text-sm text-text-muted not-italic">&mdash; {q.context}</cite>
+              )}
+            </blockquote>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="text-center">
+      <p class="mb-4 text-text-muted">Want to know how you compare?</p>
+      <a href="/quiz" class="rounded-xl bg-vision px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90">
+        Take the Assessment
+      </a>
+    </section>
+  </div>
+</BaseLayout>

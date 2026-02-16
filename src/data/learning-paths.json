@@ -1,0 +1,707 @@
+{
+  "version": "1.0.0",
+  "paths": [
+    {
+      "id": "strengthen-strategic-vision",
+      "name": "Master Strategic Vision",
+      "type": "strengthen",
+      "targetDimension": "strategic-vision",
+      "description": "Learn from leaders who score highest on Strategic Vision.",
+      "episodes": [
+        {
+          "leaderId": "marc-andreessen",
+          "leaderName": "Marc Andreessen",
+          "title": "Co-founder & General Partner",
+          "company": "Andreessen Horowitz",
+          "whyListen": "Marc Andreessen argues we are living through a once-in-a-century moment where AI, demographic decline, and institutional upheaval converge. He explains why AI will create super-empowered individuals rather than mass unemployment, predicts the convergence of PM, designer, and engineering roles, and urges everyone to develop deep agency to fully leverage AI's transformative potential.",
+          "keyTakeaway": "AI is the philosopher's stone — it transforms sand into thought, and this is a once-in-a-century moment",
+          "topQuote": null
+        },
+        {
+          "leaderId": "alex-komoroske",
+          "leaderName": "Alex Komoroske",
+          "title": "Founder & Former Head of Corporate Strategy",
+          "company": "Stripe / Former Google (13 years)",
+          "whyListen": "Alex Komoroske offers a deeply original perspective on how LLMs will reshape product development, arguing they're a disruptive 'magical duct tape' that changes the economics of software and makes taste the most critical competitive advantage. Drawing from 13 years at Google and his role at Stripe, he advocates for a gardener mindset over a builder mindset, organizational concepts inspired by slime mold, and disciplined reflection practices that generate his most impactful insights.",
+          "keyTakeaway": "Think like a gardener, not a builder — garden things that grow on their own rather than manipulating to match a plan",
+          "topQuote": null
+        },
+        {
+          "leaderId": "ebi-atawodi",
+          "leaderName": "Ebi Atawodi",
+          "title": "Director of Product Management",
+          "company": "YouTube (Google)",
+          "whyListen": "Ebi Atawodi shares an exceptionally tactical framework for developing and communicating product vision, drawing from her experience at Uber, Netflix, and YouTube. She outlines three concrete methods — the 'Once Upon a Time' Mad Libs, the newspaper headline article, and visual mockups — along with her empathize-create-evangelize process for building vision from the ground up. The conversation also covers her philosophy of product management as 'clarity and conviction' and building strong product culture through genuine care for people.",
+          "keyTakeaway": "Product management is clarity and conviction — you must be able to clearly articulate the problem and the vision",
+          "topQuote": null
+        },
+        {
+          "leaderId": "geoffrey-moore",
+          "leaderName": "Geoffrey Moore",
+          "title": "Author and Advisor",
+          "company": "Independent",
+          "whyListen": "Geoffrey Moore revisits and updates his seminal Crossing the Chasm framework, explaining why companies still fail to get narrow enough with their initial target audience and why taking any customer you can find is like running a match back and forth under a log. He shares the bowling pin strategy for sequential market expansion, the specific go-to-market playbook for each stage of the adoption lifecycle, the seven deadly sins of chasm-crossing, and why ecosystems only form around clear market leaders.",
+          "keyTakeaway": "Taking any customer you can find in the chasm is like running a match back and forth under a log — you must focus on one spot until the fire starts",
+          "topQuote": null
+        },
+        {
+          "leaderId": "gibson-biddle",
+          "leaderName": "Gibson Biddle",
+          "title": "Former VP of Product",
+          "company": "Netflix",
+          "whyListen": "Gibson Biddle, former VP of Product at Netflix, walks through his widely adopted product strategy framework of delighting customers in hard to copy, margin enhancing ways. Using detailed Netflix case studies including the Perfect New Release A/B test, he demonstrates how to evaluate tradeoffs between customer delight and business margin, why hard-to-copy advantages like personalization and brand are essential, and how to think about product prioritization through the lens of strategy rather than feature lists.",
+          "keyTakeaway": "Product strategy is to delight customers in hard to copy, margin enhancing ways — all three elements must work together",
+          "topQuote": null
+        },
+        {
+          "leaderId": "gustav-so-derstro-m",
+          "leaderName": "Gustav Soderstrom",
+          "title": "Co-President, CPO and CTO",
+          "company": "Spotify",
+          "whyListen": "Gustav Soderstrom shares how Spotify navigates the shift from curation to recommendation to generation, introducing principles like fault-tolerant user interfaces that match the actual performance of AI models and the importance of product magic tricks for virality. He walks through the development of the AI DJ as Spotify's first truly generative product, explains why great AI products should do as little as possible and get out of the way, and reflects on using an internal podcast to build culture and make senior leadership more approachable across a massive organization.",
+          "keyTakeaway": "The internet went from curation to recommendation to generation — each era requires rethinking your entire product and sometimes your business model",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "develop-strategic-vision",
+      "name": "Develop Your Strategic Vision",
+      "type": "develop",
+      "targetDimension": "strategic-vision",
+      "description": "If Strategic Vision is your blind spot, these episodes will rewire how you think about it.",
+      "episodes": [
+        {
+          "leaderId": "marc-andreessen",
+          "leaderName": "Marc Andreessen",
+          "title": "Co-founder & General Partner",
+          "company": "Andreessen Horowitz",
+          "whyListen": "Marc Andreessen argues we are living through a once-in-a-century moment where AI, demographic decline, and institutional upheaval converge. He explains why AI will create super-empowered individuals rather than mass unemployment, predicts the convergence of PM, designer, and engineering roles, and urges everyone to develop deep agency to fully leverage AI's transformative potential.",
+          "keyTakeaway": "AI is the philosopher's stone — it transforms sand into thought, and this is a once-in-a-century moment",
+          "topQuote": null
+        },
+        {
+          "leaderId": "alex-komoroske",
+          "leaderName": "Alex Komoroske",
+          "title": "Founder & Former Head of Corporate Strategy",
+          "company": "Stripe / Former Google (13 years)",
+          "whyListen": "Alex Komoroske offers a deeply original perspective on how LLMs will reshape product development, arguing they're a disruptive 'magical duct tape' that changes the economics of software and makes taste the most critical competitive advantage. Drawing from 13 years at Google and his role at Stripe, he advocates for a gardener mindset over a builder mindset, organizational concepts inspired by slime mold, and disciplined reflection practices that generate his most impactful insights.",
+          "keyTakeaway": "Think like a gardener, not a builder — garden things that grow on their own rather than manipulating to match a plan",
+          "topQuote": null
+        },
+        {
+          "leaderId": "ebi-atawodi",
+          "leaderName": "Ebi Atawodi",
+          "title": "Director of Product Management",
+          "company": "YouTube (Google)",
+          "whyListen": "Ebi Atawodi shares an exceptionally tactical framework for developing and communicating product vision, drawing from her experience at Uber, Netflix, and YouTube. She outlines three concrete methods — the 'Once Upon a Time' Mad Libs, the newspaper headline article, and visual mockups — along with her empathize-create-evangelize process for building vision from the ground up. The conversation also covers her philosophy of product management as 'clarity and conviction' and building strong product culture through genuine care for people.",
+          "keyTakeaway": "Product management is clarity and conviction — you must be able to clearly articulate the problem and the vision",
+          "topQuote": null
+        },
+        {
+          "leaderId": "geoffrey-moore",
+          "leaderName": "Geoffrey Moore",
+          "title": "Author and Advisor",
+          "company": "Independent",
+          "whyListen": "Geoffrey Moore revisits and updates his seminal Crossing the Chasm framework, explaining why companies still fail to get narrow enough with their initial target audience and why taking any customer you can find is like running a match back and forth under a log. He shares the bowling pin strategy for sequential market expansion, the specific go-to-market playbook for each stage of the adoption lifecycle, the seven deadly sins of chasm-crossing, and why ecosystems only form around clear market leaders.",
+          "keyTakeaway": "Taking any customer you can find in the chasm is like running a match back and forth under a log — you must focus on one spot until the fire starts",
+          "topQuote": null
+        },
+        {
+          "leaderId": "gibson-biddle",
+          "leaderName": "Gibson Biddle",
+          "title": "Former VP of Product",
+          "company": "Netflix",
+          "whyListen": "Gibson Biddle, former VP of Product at Netflix, walks through his widely adopted product strategy framework of delighting customers in hard to copy, margin enhancing ways. Using detailed Netflix case studies including the Perfect New Release A/B test, he demonstrates how to evaluate tradeoffs between customer delight and business margin, why hard-to-copy advantages like personalization and brand are essential, and how to think about product prioritization through the lens of strategy rather than feature lists.",
+          "keyTakeaway": "Product strategy is to delight customers in hard to copy, margin enhancing ways — all three elements must work together",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "strengthen-execution-craft",
+      "name": "Master Execution & Craft",
+      "type": "strengthen",
+      "targetDimension": "execution-craft",
+      "description": "Learn from leaders who score highest on Execution & Craft.",
+      "episodes": [
+        {
+          "leaderId": "farhan-thawar",
+          "leaderName": "Farhan Thawar",
+          "title": "Vice President and Head of Engineering",
+          "company": "Shopify",
+          "whyListen": "Farhan Thawar reveals how Shopify maintains urgency and velocity at scale across 10,000+ remote employees, including their meeting cadences, the counterintuitive power of pair programming, the Delete Code Club for simplification, and their approach to hiring over a thousand engineering interns. He shares his philosophy of choosing the hard path, doing more per minute rather than more hours, and treating 'stupid questions' as a superpower for deep understanding.",
+          "keyTakeaway": "What if you just did more per minute? — intensity is about throughput per unit of time, not hours worked",
+          "topQuote": null
+        },
+        {
+          "leaderId": "geoff-charles",
+          "leaderName": "Geoff Charles",
+          "title": "VP of Product",
+          "company": "Ramp",
+          "whyListen": "Geoff Charles reveals how Ramp became the fastest growing SaaS business in history by making velocity the core operating principle. With teams as small as three engineers, one designer, and one PM, they built competitors to Amex and Expensify within months and hit $100M revenue with under 50 people in R&D. The conversation covers how they operationalize velocity through planning, strategy, hiring, and decision-making, plus how they prevent burnout in an extremely fast-moving culture.",
+          "keyTakeaway": "Velocity is everything — it's how you design product development, incentivize teams, hire, promote, and make decisions",
+          "topQuote": null
+        },
+        {
+          "leaderId": "karri-saarinen",
+          "leaderName": "Karri Saarinen",
+          "title": "Co-Founder & CEO",
+          "company": "Linear",
+          "whyListen": "Karri Saarinen reveals how Linear built the most beloved issue tracking tool through an obsessive focus on craft, opinionated design, and a unique building method: ship rough prototypes internally in the first week, co-create with select customers, then polish before general release. With no AB tests, no metrics-based goals, paid work trials for hiring, and a net negative burn rate, Linear represents a counterculture approach to building SaaS products.",
+          "keyTakeaway": "Ship early to yourself and select customers, but polish before general release — quality matters at the last mile",
+          "topQuote": null
+        },
+        {
+          "leaderId": "matt-macinnis",
+          "leaderName": "Matt MacInnis",
+          "title": "Chief Product Officer",
+          "company": "Rippling",
+          "whyListen": "Matt MacInnis shares his intense leadership philosophy from building Rippling into a $16B company, arguing that deliberate understaffing prevents politics, radical feedback is a moral obligation, and every management layer risks diluting founder intensity. His approach demands extraordinary effort for extraordinary results and treats comfort zones as danger signals.",
+          "keyTakeaway": "Deliberately understaff every project — overstaffing creates politics, waste, and cruft",
+          "topQuote": null
+        },
+        {
+          "leaderId": "nan-yu",
+          "leaderName": "Nan Yu",
+          "title": "Head of Product",
+          "company": "Linear",
+          "whyListen": "Nan Yu reveals how Linear builds one of the most loved B2B products by rejecting the tradeoff between speed and quality, arguing that true craft mastery means both move together. He shares his system for creative problem-solving, how to discover the emotions customers want to avoid, and practical advice on landing dream PM roles.",
+          "keyTakeaway": "Speed and quality are not a tradeoff — competence is what enables both simultaneously",
+          "topQuote": null
+        },
+        {
+          "leaderId": "alexander-embiricos",
+          "leaderName": "Alexander Embiricos",
+          "title": "Product Lead, Codex",
+          "company": "OpenAI",
+          "whyListen": "Alexander Embiricos shares what it's like building Codex at OpenAI, where radical speed and bottoms-up autonomy are enabled by extraordinary talent density. He discusses Codex's explosive 20x growth, how it enabled the Sora Android app to ship in just 18 days, why his team is now focused on making code review easier rather than just code generation, and his belief that the biggest bottleneck to AI progress is human bandwidth, not model capability.",
+          "keyTakeaway": "At AI companies, empirical learning matters more than planning — be ready, fire, aim rather than ready, aim, fire",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "develop-execution-craft",
+      "name": "Develop Your Execution & Craft",
+      "type": "develop",
+      "targetDimension": "execution-craft",
+      "description": "If Execution & Craft is your blind spot, these episodes will rewire how you think about it.",
+      "episodes": [
+        {
+          "leaderId": "farhan-thawar",
+          "leaderName": "Farhan Thawar",
+          "title": "Vice President and Head of Engineering",
+          "company": "Shopify",
+          "whyListen": "Farhan Thawar reveals how Shopify maintains urgency and velocity at scale across 10,000+ remote employees, including their meeting cadences, the counterintuitive power of pair programming, the Delete Code Club for simplification, and their approach to hiring over a thousand engineering interns. He shares his philosophy of choosing the hard path, doing more per minute rather than more hours, and treating 'stupid questions' as a superpower for deep understanding.",
+          "keyTakeaway": "What if you just did more per minute? — intensity is about throughput per unit of time, not hours worked",
+          "topQuote": null
+        },
+        {
+          "leaderId": "geoff-charles",
+          "leaderName": "Geoff Charles",
+          "title": "VP of Product",
+          "company": "Ramp",
+          "whyListen": "Geoff Charles reveals how Ramp became the fastest growing SaaS business in history by making velocity the core operating principle. With teams as small as three engineers, one designer, and one PM, they built competitors to Amex and Expensify within months and hit $100M revenue with under 50 people in R&D. The conversation covers how they operationalize velocity through planning, strategy, hiring, and decision-making, plus how they prevent burnout in an extremely fast-moving culture.",
+          "keyTakeaway": "Velocity is everything — it's how you design product development, incentivize teams, hire, promote, and make decisions",
+          "topQuote": null
+        },
+        {
+          "leaderId": "karri-saarinen",
+          "leaderName": "Karri Saarinen",
+          "title": "Co-Founder & CEO",
+          "company": "Linear",
+          "whyListen": "Karri Saarinen reveals how Linear built the most beloved issue tracking tool through an obsessive focus on craft, opinionated design, and a unique building method: ship rough prototypes internally in the first week, co-create with select customers, then polish before general release. With no AB tests, no metrics-based goals, paid work trials for hiring, and a net negative burn rate, Linear represents a counterculture approach to building SaaS products.",
+          "keyTakeaway": "Ship early to yourself and select customers, but polish before general release — quality matters at the last mile",
+          "topQuote": null
+        },
+        {
+          "leaderId": "matt-macinnis",
+          "leaderName": "Matt MacInnis",
+          "title": "Chief Product Officer",
+          "company": "Rippling",
+          "whyListen": "Matt MacInnis shares his intense leadership philosophy from building Rippling into a $16B company, arguing that deliberate understaffing prevents politics, radical feedback is a moral obligation, and every management layer risks diluting founder intensity. His approach demands extraordinary effort for extraordinary results and treats comfort zones as danger signals.",
+          "keyTakeaway": "Deliberately understaff every project — overstaffing creates politics, waste, and cruft",
+          "topQuote": null
+        },
+        {
+          "leaderId": "nan-yu",
+          "leaderName": "Nan Yu",
+          "title": "Head of Product",
+          "company": "Linear",
+          "whyListen": "Nan Yu reveals how Linear builds one of the most loved B2B products by rejecting the tradeoff between speed and quality, arguing that true craft mastery means both move together. He shares his system for creative problem-solving, how to discover the emotions customers want to avoid, and practical advice on landing dream PM roles.",
+          "keyTakeaway": "Speed and quality are not a tradeoff — competence is what enables both simultaneously",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "strengthen-data-experimentation",
+      "name": "Master Data & Experimentation",
+      "type": "strengthen",
+      "targetDimension": "data-experimentation",
+      "description": "Learn from leaders who score highest on Data & Experimentation.",
+      "episodes": [
+        {
+          "leaderId": "albert-cheng",
+          "leaderName": "Albert Cheng",
+          "title": "Head of Growth & Monetization",
+          "company": "Chess.com / Former Duolingo & Grammarly",
+          "whyListen": "Albert Cheng shares his explore-exploit framework for finding growth opportunities, drawing from leading growth and monetization at Duolingo, Grammarly, and Chess.com. He reveals key monetization wins like sampling paid features for free Grammarly users, advocates for running 1,000 experiments per year, and discusses how AI is accelerating growth work while making experience-based intuitions less reliable.",
+          "keyTakeaway": "Growth's job is to connect users to the value of your product, not pure metrics hacking",
+          "topQuote": null
+        },
+        {
+          "leaderId": "hamel-husain",
+          "leaderName": "Hamel Husain",
+          "title": "AI Consultant and Educator",
+          "company": "Independent",
+          "whyListen": "Hamel Husain (alongside Shreya Shankar) breaks down evals from an obscure AI concept into a practical, approachable skill for product builders. He walks through a real-world example of building evals for a real estate AI assistant, explains why you should start with error analysis before writing any tests, introduces the benevolent dictator concept for eval taste, and addresses major misconceptions including why you cannot just have AI evaluate itself. The episode serves as the definitive primer on building evals for AI products.",
+          "keyTakeaway": "Evals is really data analytics on your LLM application — a systematic way of looking at data and creating metrics so you can iterate and improve with confidence",
+          "topQuote": null
+        },
+        {
+          "leaderId": "jackson-shuttleworth",
+          "leaderName": "Jackson Shuttleworth",
+          "title": "Group Product Manager, Retention",
+          "company": "Duolingo",
+          "whyListen": "Jackson Shuttleworth provides the definitive deep dive into Duolingo's streaks feature, which has become arguably the most impactful single feature in consumer tech with 9 million users maintaining year-plus streaks. He reveals how simplifying from XP-based to one-lesson-a-day streaks was a massive DAU driver, while going too easy (one exercise) produced zero lift, and explains Duolingo's test-everything philosophy of running 600 experiments in four years on this one feature alone.",
+          "keyTakeaway": "Test everything — we've run over 600 experiments on streaks in four years, and we'd much rather test it than debate it for days",
+          "topQuote": null
+        },
+        {
+          "leaderId": "nicole-forsgren",
+          "leaderName": "Nicole Forsgren",
+          "title": "Researcher & Author",
+          "company": "Author of Accelerate & Frictionless",
+          "whyListen": "Nicole Forsgren dives deep into measuring and improving engineering team productivity using the DORA and SPACE frameworks she created. She reveals that 80% of organizations struggle because they don't clearly define what problem they're solving, and explains the critical difference between culture, toolchain friction, and inner vs outer loop developer experience.",
+          "keyTakeaway": "Start with what is your problem or goal — 80% of teams fail because they skip this step",
+          "topQuote": null
+        },
+        {
+          "leaderId": "ramesh-johari",
+          "leaderName": "Ramesh Johari",
+          "title": "Professor",
+          "company": "Stanford University",
+          "whyListen": "Ramesh Johari brings an academic and practical perspective to marketplace building, explaining why marketplace management is fundamentally a whac-a-mole game where every improvement creates winners and losers. Drawing on his work with Airbnb, Uber, Stripe, and others, he covers how to fuel marketplace flywheels, design better review systems, and why AI will transform experimentation in marketplaces.",
+          "keyTakeaway": "Marketplace management is a game of whac-a-mole — moving attention and inventory creates winners and losers",
+          "topQuote": null
+        },
+        {
+          "leaderId": "ronny-kohavi",
+          "leaderName": "Ronny Kohavi",
+          "title": "World Expert on A/B Testing",
+          "company": "Former VP at Airbnb / Microsoft / Amazon",
+          "whyListen": "Ronny Kohavi, the world's foremost A/B testing expert, makes the case for testing everything — including small bug fixes that can have surprising impact. Drawing on his experience building experimentation platforms at Amazon, Microsoft, and Airbnb, he explains why most experiments fail, how to allocate between safe and high-risk bets, and why it's impossible to experiment too much.",
+          "keyTakeaway": "Test everything — any code change or feature must be in some experiment, because even small bug fixes can have surprising impact",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "develop-data-experimentation",
+      "name": "Develop Your Data & Experimentation",
+      "type": "develop",
+      "targetDimension": "data-experimentation",
+      "description": "If Data & Experimentation is your blind spot, these episodes will rewire how you think about it.",
+      "episodes": [
+        {
+          "leaderId": "albert-cheng",
+          "leaderName": "Albert Cheng",
+          "title": "Head of Growth & Monetization",
+          "company": "Chess.com / Former Duolingo & Grammarly",
+          "whyListen": "Albert Cheng shares his explore-exploit framework for finding growth opportunities, drawing from leading growth and monetization at Duolingo, Grammarly, and Chess.com. He reveals key monetization wins like sampling paid features for free Grammarly users, advocates for running 1,000 experiments per year, and discusses how AI is accelerating growth work while making experience-based intuitions less reliable.",
+          "keyTakeaway": "Growth's job is to connect users to the value of your product, not pure metrics hacking",
+          "topQuote": null
+        },
+        {
+          "leaderId": "hamel-husain",
+          "leaderName": "Hamel Husain",
+          "title": "AI Consultant and Educator",
+          "company": "Independent",
+          "whyListen": "Hamel Husain (alongside Shreya Shankar) breaks down evals from an obscure AI concept into a practical, approachable skill for product builders. He walks through a real-world example of building evals for a real estate AI assistant, explains why you should start with error analysis before writing any tests, introduces the benevolent dictator concept for eval taste, and addresses major misconceptions including why you cannot just have AI evaluate itself. The episode serves as the definitive primer on building evals for AI products.",
+          "keyTakeaway": "Evals is really data analytics on your LLM application — a systematic way of looking at data and creating metrics so you can iterate and improve with confidence",
+          "topQuote": null
+        },
+        {
+          "leaderId": "jackson-shuttleworth",
+          "leaderName": "Jackson Shuttleworth",
+          "title": "Group Product Manager, Retention",
+          "company": "Duolingo",
+          "whyListen": "Jackson Shuttleworth provides the definitive deep dive into Duolingo's streaks feature, which has become arguably the most impactful single feature in consumer tech with 9 million users maintaining year-plus streaks. He reveals how simplifying from XP-based to one-lesson-a-day streaks was a massive DAU driver, while going too easy (one exercise) produced zero lift, and explains Duolingo's test-everything philosophy of running 600 experiments in four years on this one feature alone.",
+          "keyTakeaway": "Test everything — we've run over 600 experiments on streaks in four years, and we'd much rather test it than debate it for days",
+          "topQuote": null
+        },
+        {
+          "leaderId": "nicole-forsgren",
+          "leaderName": "Nicole Forsgren",
+          "title": "Researcher & Author",
+          "company": "Author of Accelerate & Frictionless",
+          "whyListen": "Nicole Forsgren dives deep into measuring and improving engineering team productivity using the DORA and SPACE frameworks she created. She reveals that 80% of organizations struggle because they don't clearly define what problem they're solving, and explains the critical difference between culture, toolchain friction, and inner vs outer loop developer experience.",
+          "keyTakeaway": "Start with what is your problem or goal — 80% of teams fail because they skip this step",
+          "topQuote": null
+        },
+        {
+          "leaderId": "ramesh-johari",
+          "leaderName": "Ramesh Johari",
+          "title": "Professor",
+          "company": "Stanford University",
+          "whyListen": "Ramesh Johari brings an academic and practical perspective to marketplace building, explaining why marketplace management is fundamentally a whac-a-mole game where every improvement creates winners and losers. Drawing on his work with Airbnb, Uber, Stripe, and others, he covers how to fuel marketplace flywheels, design better review systems, and why AI will transform experimentation in marketplaces.",
+          "keyTakeaway": "Marketplace management is a game of whac-a-mole — moving attention and inventory creates winners and losers",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "strengthen-growth-distribution",
+      "name": "Master Growth & Distribution",
+      "type": "strengthen",
+      "targetDimension": "growth-distribution",
+      "description": "Learn from leaders who score highest on Growth & Distribution.",
+      "episodes": [
+        {
+          "leaderId": "elena-verna",
+          "leaderName": "Elena Verna",
+          "title": "Head of Growth",
+          "company": "Lovable",
+          "whyListen": "Elena Verna delivers a comprehensive deep-dive into product-led sales, explaining how it bridges the gap between individual self-serve usage and enterprise-level sales conversations. She introduces the PQA (product-qualified account) framework, distinguishes it from PQLs and MQLs, and maps the three paths from usage to closed deals. The episode covers when to invest in PLS, how to structure the product-sales handoff, and why product teams must take ownership of monetization and pipeline.",
+          "keyTakeaway": "Every sales-led company must add product-led growth elements or be disrupted by someone who does",
+          "topQuote": null
+        },
+        {
+          "leaderId": "ethan-smith",
+          "leaderName": "Ethan Smith",
+          "title": "CEO",
+          "company": "Graphite",
+          "whyListen": "Ethan Smith provides a comprehensive guide to Answer Engine Optimization (AEO) — the emerging discipline of getting your product to show up in AI-generated answers from ChatGPT, Claude, Perplexity, and Google AI Mode. He reveals that LLM traffic converts at dramatically higher rates than traditional search, explains why the strategy requires getting mentioned across many citations rather than ranking one link first, and shares tactical advice on how early-stage companies can win at AEO quickly through Reddit, YouTube, and blog presence.",
+          "keyTakeaway": "AEO is fundamentally different from SEO — in LLMs you need to get mentioned across many citations, not just rank one blue link first",
+          "topQuote": null
+        },
+        {
+          "leaderId": "lauryn-isford",
+          "leaderName": "Lauryn Isford",
+          "title": "Head of Growth",
+          "company": "Airtable",
+          "whyListen": "Lauryn Isford dives deep into onboarding as the most undervalued growth lever, sharing how she led a redesign of Airtable's onboarding that drove a 20% lift in activation. She offers a contrarian perspective on experimentation culture, arguing growth teams should use A/B tests primarily for risk mitigation rather than as a default practice, and shares tactical advice on defining activation metrics.",
+          "keyTakeaway": "Onboarding is the single biggest undervalued growth lever for self-serve products",
+          "topQuote": null
+        },
+        {
+          "leaderId": "meltem-kuran",
+          "leaderName": "Meltem Kuran",
+          "title": "Head of Growth",
+          "company": "Deel",
+          "whyListen": "Meltem Kuran reveals the growth playbook behind Deel's extraordinary trajectory from $0 to $300M ARR in three years. She emphasizes getting fundamentals right before scaling — fast websites, SEO foundations, and content before paid acquisition — arguing that most companies skip the basics in their rush to scale.",
+          "keyTakeaway": "Build the skeleton before you put on the makeup — get fundamentals right before scaling tactics",
+          "topQuote": null
+        },
+        {
+          "leaderId": "nikita-bier",
+          "leaderName": "Nikita Bier",
+          "title": "Founder & Consumer App Expert",
+          "company": "tbh / Gas (acquired by Facebook and Discord)",
+          "whyListen": "Nikita Bier reveals how he repeatedly built apps that reached the top of the App Store with tiny teams, from tbh (sold to Facebook) to Gas (sold to Discord). He shares his approach to finding latent demand, why he believes products live and die in the pixels rather than in documents, and the absolute chaos of keeping viral consumer apps online during hypergrowth.",
+          "keyTakeaway": "Look for latent demand — people going through distortive processes to obtain a particular value",
+          "topQuote": null
+        },
+        {
+          "leaderId": "nilan-peiris",
+          "leaderName": "Nilan Peiris",
+          "title": "Chief Product Officer",
+          "company": "Wise",
+          "whyListen": "Nilan Peiris breaks down exactly how Wise achieved 70% word-of-mouth growth by building experiences so good that users can't help but recommend them. He explains why optimizing for recommendation rather than conversion is the key to exponential growth, and shares the tactical playbook behind Wise's journey to moving $12 billion monthly in cross-border payments.",
+          "keyTakeaway": "To get recommendation, you have to blow users' socks off — give them an experience they didn't know was possible",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "develop-growth-distribution",
+      "name": "Develop Your Growth & Distribution",
+      "type": "develop",
+      "targetDimension": "growth-distribution",
+      "description": "If Growth & Distribution is your blind spot, these episodes will rewire how you think about it.",
+      "episodes": [
+        {
+          "leaderId": "elena-verna",
+          "leaderName": "Elena Verna",
+          "title": "Head of Growth",
+          "company": "Lovable",
+          "whyListen": "Elena Verna delivers a comprehensive deep-dive into product-led sales, explaining how it bridges the gap between individual self-serve usage and enterprise-level sales conversations. She introduces the PQA (product-qualified account) framework, distinguishes it from PQLs and MQLs, and maps the three paths from usage to closed deals. The episode covers when to invest in PLS, how to structure the product-sales handoff, and why product teams must take ownership of monetization and pipeline.",
+          "keyTakeaway": "Every sales-led company must add product-led growth elements or be disrupted by someone who does",
+          "topQuote": null
+        },
+        {
+          "leaderId": "ethan-smith",
+          "leaderName": "Ethan Smith",
+          "title": "CEO",
+          "company": "Graphite",
+          "whyListen": "Ethan Smith provides a comprehensive guide to Answer Engine Optimization (AEO) — the emerging discipline of getting your product to show up in AI-generated answers from ChatGPT, Claude, Perplexity, and Google AI Mode. He reveals that LLM traffic converts at dramatically higher rates than traditional search, explains why the strategy requires getting mentioned across many citations rather than ranking one link first, and shares tactical advice on how early-stage companies can win at AEO quickly through Reddit, YouTube, and blog presence.",
+          "keyTakeaway": "AEO is fundamentally different from SEO — in LLMs you need to get mentioned across many citations, not just rank one blue link first",
+          "topQuote": null
+        },
+        {
+          "leaderId": "lauryn-isford",
+          "leaderName": "Lauryn Isford",
+          "title": "Head of Growth",
+          "company": "Airtable",
+          "whyListen": "Lauryn Isford dives deep into onboarding as the most undervalued growth lever, sharing how she led a redesign of Airtable's onboarding that drove a 20% lift in activation. She offers a contrarian perspective on experimentation culture, arguing growth teams should use A/B tests primarily for risk mitigation rather than as a default practice, and shares tactical advice on defining activation metrics.",
+          "keyTakeaway": "Onboarding is the single biggest undervalued growth lever for self-serve products",
+          "topQuote": null
+        },
+        {
+          "leaderId": "meltem-kuran",
+          "leaderName": "Meltem Kuran",
+          "title": "Head of Growth",
+          "company": "Deel",
+          "whyListen": "Meltem Kuran reveals the growth playbook behind Deel's extraordinary trajectory from $0 to $300M ARR in three years. She emphasizes getting fundamentals right before scaling — fast websites, SEO foundations, and content before paid acquisition — arguing that most companies skip the basics in their rush to scale.",
+          "keyTakeaway": "Build the skeleton before you put on the makeup — get fundamentals right before scaling tactics",
+          "topQuote": null
+        },
+        {
+          "leaderId": "nikita-bier",
+          "leaderName": "Nikita Bier",
+          "title": "Founder & Consumer App Expert",
+          "company": "tbh / Gas (acquired by Facebook and Discord)",
+          "whyListen": "Nikita Bier reveals how he repeatedly built apps that reached the top of the App Store with tiny teams, from tbh (sold to Facebook) to Gas (sold to Discord). He shares his approach to finding latent demand, why he believes products live and die in the pixels rather than in documents, and the absolute chaos of keeping viral consumer apps online during hypergrowth.",
+          "keyTakeaway": "Look for latent demand — people going through distortive processes to obtain a particular value",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "strengthen-team-leadership",
+      "name": "Master Team & Leadership",
+      "type": "strengthen",
+      "targetDimension": "team-leadership",
+      "description": "Learn from leaders who score highest on Team & Leadership.",
+      "episodes": [
+        {
+          "leaderId": "alisa-cohn",
+          "leaderName": "Alisa Cohn",
+          "title": "Executive Coach",
+          "company": "Independent / Author",
+          "whyListen": "Alisa Cohn, the world's top-rated startup coach, provides extremely specific and actionable language for having difficult conversations, from denying promotions to addressing underperformance. She shares her three questions to end every meeting effectively, explains why a leader's job isn't to make people happy, and introduces the 'founder prenup' — a set of questions co-founders should discuss before committing to build together.",
+          "keyTakeaway": "Your job as a leader isn't to make people happy — it's to drive results while treating people with respect",
+          "topQuote": null
+        },
+        {
+          "leaderId": "elizabeth-stone",
+          "leaderName": "Elizabeth Stone",
+          "title": "Chief Technology Officer",
+          "company": "Netflix",
+          "whyListen": "Elizabeth Stone, Netflix's CTO and a trained economist, shares the inner workings of Netflix's culture of high talent density, radical candor, and the keeper test. She reveals how her economics background provides unique advantages in understanding incentives and unintended consequences, and shares her framework for developing excellence in teams: set clear expectations, give specific feedback, and help fill the gap. The conversation covers Netflix's approach to hiring, their lack of traditional performance reviews in favor of continuous feedback, and how they maintain a culture of excellence at scale.",
+          "keyTakeaway": "The last 5% is the 5% that really matters — hold yourself and your team to a world-class standard",
+          "topQuote": null
+        },
+        {
+          "leaderId": "jerry-colonna",
+          "leaderName": "Jerry Colonna",
+          "title": "Co-founder and CEO",
+          "company": "Reboot",
+          "whyListen": "Jerry Colonna shares his radical self-inquiry approach to executive coaching, centered on the question 'How have I been complicit in creating the conditions I say I don't want?' He introduces the leadership equation — practical skills plus radical self-inquiry plus shared experiences equals enhanced leadership and resilience — and argues that resilience, not performance, is what truly matters because too many successful people achieve everything and are still miserable. The conversation cuts through the socialized bullshit of entrepreneurial culture where everyone pretends they're crushing it.",
+          "keyTakeaway": "How have I been complicit in creating the conditions I say I don't want? Complicit does not mean responsible — you're driving the getaway car, not sticking up the bank teller",
+          "topQuote": null
+        },
+        {
+          "leaderId": "kim-scott",
+          "leaderName": "Kim Scott",
+          "title": "Author & Executive Coach",
+          "company": "Radical Candor / Former Google, Apple University",
+          "whyListen": "Kim Scott, author of the million-copy bestseller Radical Candor, gets deeply practical and tactical about how to practice the framework. She reveals that 90% of feedback failures are ruinous empathy — caring too much about feelings to be honest — not obnoxious aggression. Her key advice: ask 'What could I do or stop doing that would make it easier to work with me?' in your own authentic voice, and use the framework as a compass rather than a judgment tool.",
+          "keyTakeaway": "Radical Candor is caring personally and challenging directly at the same time — most people fail on one dimension or both daily",
+          "topQuote": null
+        },
+        {
+          "leaderId": "lauren-ipsen",
+          "leaderName": "Lauren Ipsen",
+          "title": "Talent Partner",
+          "company": "General Catalyst",
+          "whyListen": "Lauren Ipsen, one of tech's most accomplished product leadership recruiters, shares tactical advice on hiring senior product leaders, including why chasing big names often backfires, the three main archetypes of product leaders, and why founders must define specific mandates before starting a search. She also advises PMs on how to position themselves for the best opportunities.",
+          "keyTakeaway": "Hire for what the company needs today, not the biggest name in the market",
+          "topQuote": null
+        },
+        {
+          "leaderId": "matt-mochary",
+          "leaderName": "Matt Mochary",
+          "title": "Executive Coach",
+          "company": "Mochary Method",
+          "whyListen": "Matt Mochary, coach to the CEOs of OpenAI, Coinbase, and Reddit, shares his most practical leadership advice including why learning to fire people well is a critical skill, how anger and fear mislead leaders, and the single most important factor that determines whether a layoff goes well or creates lasting damage to a company's reputation.",
+          "keyTakeaway": "Learning to fire people well is one of the most important leadership skills",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "develop-team-leadership",
+      "name": "Develop Your Team & Leadership",
+      "type": "develop",
+      "targetDimension": "team-leadership",
+      "description": "If Team & Leadership is your blind spot, these episodes will rewire how you think about it.",
+      "episodes": [
+        {
+          "leaderId": "alisa-cohn",
+          "leaderName": "Alisa Cohn",
+          "title": "Executive Coach",
+          "company": "Independent / Author",
+          "whyListen": "Alisa Cohn, the world's top-rated startup coach, provides extremely specific and actionable language for having difficult conversations, from denying promotions to addressing underperformance. She shares her three questions to end every meeting effectively, explains why a leader's job isn't to make people happy, and introduces the 'founder prenup' — a set of questions co-founders should discuss before committing to build together.",
+          "keyTakeaway": "Your job as a leader isn't to make people happy — it's to drive results while treating people with respect",
+          "topQuote": null
+        },
+        {
+          "leaderId": "elizabeth-stone",
+          "leaderName": "Elizabeth Stone",
+          "title": "Chief Technology Officer",
+          "company": "Netflix",
+          "whyListen": "Elizabeth Stone, Netflix's CTO and a trained economist, shares the inner workings of Netflix's culture of high talent density, radical candor, and the keeper test. She reveals how her economics background provides unique advantages in understanding incentives and unintended consequences, and shares her framework for developing excellence in teams: set clear expectations, give specific feedback, and help fill the gap. The conversation covers Netflix's approach to hiring, their lack of traditional performance reviews in favor of continuous feedback, and how they maintain a culture of excellence at scale.",
+          "keyTakeaway": "The last 5% is the 5% that really matters — hold yourself and your team to a world-class standard",
+          "topQuote": null
+        },
+        {
+          "leaderId": "jerry-colonna",
+          "leaderName": "Jerry Colonna",
+          "title": "Co-founder and CEO",
+          "company": "Reboot",
+          "whyListen": "Jerry Colonna shares his radical self-inquiry approach to executive coaching, centered on the question 'How have I been complicit in creating the conditions I say I don't want?' He introduces the leadership equation — practical skills plus radical self-inquiry plus shared experiences equals enhanced leadership and resilience — and argues that resilience, not performance, is what truly matters because too many successful people achieve everything and are still miserable. The conversation cuts through the socialized bullshit of entrepreneurial culture where everyone pretends they're crushing it.",
+          "keyTakeaway": "How have I been complicit in creating the conditions I say I don't want? Complicit does not mean responsible — you're driving the getaway car, not sticking up the bank teller",
+          "topQuote": null
+        },
+        {
+          "leaderId": "kim-scott",
+          "leaderName": "Kim Scott",
+          "title": "Author & Executive Coach",
+          "company": "Radical Candor / Former Google, Apple University",
+          "whyListen": "Kim Scott, author of the million-copy bestseller Radical Candor, gets deeply practical and tactical about how to practice the framework. She reveals that 90% of feedback failures are ruinous empathy — caring too much about feelings to be honest — not obnoxious aggression. Her key advice: ask 'What could I do or stop doing that would make it easier to work with me?' in your own authentic voice, and use the framework as a compass rather than a judgment tool.",
+          "keyTakeaway": "Radical Candor is caring personally and challenging directly at the same time — most people fail on one dimension or both daily",
+          "topQuote": null
+        },
+        {
+          "leaderId": "lauren-ipsen",
+          "leaderName": "Lauren Ipsen",
+          "title": "Talent Partner",
+          "company": "General Catalyst",
+          "whyListen": "Lauren Ipsen, one of tech's most accomplished product leadership recruiters, shares tactical advice on hiring senior product leaders, including why chasing big names often backfires, the three main archetypes of product leaders, and why founders must define specific mandates before starting a search. She also advises PMs on how to position themselves for the best opportunities.",
+          "keyTakeaway": "Hire for what the company needs today, not the biggest name in the market",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "strengthen-user-empathy",
+      "name": "Master User Empathy",
+      "type": "strengthen",
+      "targetDimension": "user-empathy",
+      "description": "Learn from leaders who score highest on User Empathy.",
+      "episodes": [
+        {
+          "leaderId": "teresa-torres",
+          "leaderName": "Teresa Torres",
+          "title": "Product Coach & Author",
+          "company": "Author of Continuous Discovery Habits",
+          "whyListen": "Teresa Torres goes deep on her opportunity solution tree framework and how to build sustainable systems for continuous customer discovery. She covers the most common interviewing mistakes, how to automate the research process so it doesn't become a time burden, and how to make the case within your organization for spending more time talking to customers.",
+          "keyTakeaway": "Build a system for talking to customers regularly — don't make it a one-time event",
+          "topQuote": null
+        },
+        {
+          "leaderId": "adriel-frederick",
+          "leaderName": "Adriel Frederick",
+          "title": "VP of Product",
+          "company": "Reddit",
+          "whyListen": "Adriel Frederick discusses the PM's critical role in algorithmic product management, drawing from his experience building Facebook's growth team and Lyft's marketplace pricing. He shares powerful insights on how diversity drives better global product design, how to set up R&D teams that avoid organizational rejection, and how to lead product teams through company controversy by staying deeply connected to users.",
+          "keyTakeaway": "When working on algorithmic products, the PM's job is deciding what the algorithm should own versus what people should own",
+          "topQuote": null
+        },
+        {
+          "leaderId": "bob-baxley",
+          "leaderName": "Bob Baxley",
+          "title": "Design Executive & Advisor",
+          "company": "Apple / Pinterest / Yahoo / ThoughtSpot",
+          "whyListen": "Bob Baxley, a three-decade design leader at Apple, Pinterest, Yahoo, and ThoughtSpot, shares a deeply philosophical perspective on design as imagining and building the future, not just making things pretty. He distinguishes between design-led and designer-led companies, explains why Apple's design culture can't be replicated by hiring Apple alumni, and argues that product builders have a moral obligation to improve the hundreds of daily technology interactions people have.",
+          "keyTakeaway": "Design is trying to imagine the future you want to live in and then take the steps to make it real",
+          "topQuote": null
+        },
+        {
+          "leaderId": "bob-moesta",
+          "leaderName": "Bob Moesta",
+          "title": "Co-Founder & CEO",
+          "company": "The Rewired Group",
+          "whyListen": "Bob Moesta, co-creator of the Jobs-to-be-Done framework with Clay Christensen, provides a definitive deep dive into JTBD, explaining that people hire products to make progress, not based on features. Using his famous Snickers vs Milky Way example, he demonstrates how JTBD reveals the true competitive set from the demand side, and explains why context and outcome — not pain and gain — are the real drivers of customer behavior.",
+          "keyTakeaway": "People don't buy products, they hire them to make progress in their life — understand the job, not the product",
+          "topQuote": null
+        },
+        {
+          "leaderId": "chip-conley",
+          "leaderName": "Chip Conley",
+          "title": "Hospitality Entrepreneur & Mentor",
+          "company": "Airbnb / Joie de Vivre Hotels",
+          "whyListen": "Chip Conley, who founded the second-largest boutique hotel chain in the US at 26 and then joined Airbnb at 52 as a mentor to Brian Chesky, shares the extraordinary experience of being an older leader inside a young tech company. He discusses the value of intergenerational mentorship, how his hospitality expertise reframed Airbnb's understanding of their product, and the reality of working for someone in founder mode.",
+          "keyTakeaway": "At Airbnb I had to be both wise and curious, and often the dumbest person in the room — the combination of age and humility creates unique value",
+          "topQuote": null
+        },
+        {
+          "leaderId": "dr-becky-kennedy",
+          "leaderName": "Dr. Becky Kennedy",
+          "title": "Clinical Psychologist & CEO",
+          "company": "Good Inside",
+          "whyListen": "Dr. Becky Kennedy, clinical psychologist and CEO of Good Inside, demonstrates how parenting principles map directly onto workplace leadership. She argues that bad behavior at work signals a missing skill, not a bad person, that separating behavior from identity is essential for productive management conversations, and that building resilience ('this is hard and I can do hard things') matters more than optimizing for happiness in both families and organizations.",
+          "keyTakeaway": "All humans need the same things whether they're 1 or 45 — when you see bad behavior, the actual problem is someone lacks the skill to manage something happening internally",
+          "topQuote": null
+        }
+      ]
+    },
+    {
+      "id": "develop-user-empathy",
+      "name": "Develop Your User Empathy",
+      "type": "develop",
+      "targetDimension": "user-empathy",
+      "description": "If User Empathy is your blind spot, these episodes will rewire how you think about it.",
+      "episodes": [
+        {
+          "leaderId": "teresa-torres",
+          "leaderName": "Teresa Torres",
+          "title": "Product Coach & Author",
+          "company": "Author of Continuous Discovery Habits",
+          "whyListen": "Teresa Torres goes deep on her opportunity solution tree framework and how to build sustainable systems for continuous customer discovery. She covers the most common interviewing mistakes, how to automate the research process so it doesn't become a time burden, and how to make the case within your organization for spending more time talking to customers.",
+          "keyTakeaway": "Build a system for talking to customers regularly — don't make it a one-time event",
+          "topQuote": null
+        },
+        {
+          "leaderId": "adriel-frederick",
+          "leaderName": "Adriel Frederick",
+          "title": "VP of Product",
+          "company": "Reddit",
+          "whyListen": "Adriel Frederick discusses the PM's critical role in algorithmic product management, drawing from his experience building Facebook's growth team and Lyft's marketplace pricing. He shares powerful insights on how diversity drives better global product design, how to set up R&D teams that avoid organizational rejection, and how to lead product teams through company controversy by staying deeply connected to users.",
+          "keyTakeaway": "When working on algorithmic products, the PM's job is deciding what the algorithm should own versus what people should own",
+          "topQuote": null
+        },
+        {
+          "leaderId": "bob-baxley",
+          "leaderName": "Bob Baxley",
+          "title": "Design Executive & Advisor",
+          "company": "Apple / Pinterest / Yahoo / ThoughtSpot",
+          "whyListen": "Bob Baxley, a three-decade design leader at Apple, Pinterest, Yahoo, and ThoughtSpot, shares a deeply philosophical perspective on design as imagining and building the future, not just making things pretty. He distinguishes between design-led and designer-led companies, explains why Apple's design culture can't be replicated by hiring Apple alumni, and argues that product builders have a moral obligation to improve the hundreds of daily technology interactions people have.",
+          "keyTakeaway": "Design is trying to imagine the future you want to live in and then take the steps to make it real",
+          "topQuote": null
+        },
+        {
+          "leaderId": "bob-moesta",
+          "leaderName": "Bob Moesta",
+          "title": "Co-Founder & CEO",
+          "company": "The Rewired Group",
+          "whyListen": "Bob Moesta, co-creator of the Jobs-to-be-Done framework with Clay Christensen, provides a definitive deep dive into JTBD, explaining that people hire products to make progress, not based on features. Using his famous Snickers vs Milky Way example, he demonstrates how JTBD reveals the true competitive set from the demand side, and explains why context and outcome — not pain and gain — are the real drivers of customer behavior.",
+          "keyTakeaway": "People don't buy products, they hire them to make progress in their life — understand the job, not the product",
+          "topQuote": null
+        },
+        {
+          "leaderId": "chip-conley",
+          "leaderName": "Chip Conley",
+          "title": "Hospitality Entrepreneur & Mentor",
+          "company": "Airbnb / Joie de Vivre Hotels",
+          "whyListen": "Chip Conley, who founded the second-largest boutique hotel chain in the US at 26 and then joined Airbnb at 52 as a mentor to Brian Chesky, shares the extraordinary experience of being an older leader inside a young tech company. He discusses the value of intergenerational mentorship, how his hospitality expertise reframed Airbnb's understanding of their product, and the reality of working for someone in founder mode.",
+          "keyTakeaway": "At Airbnb I had to be both wise and curious, and often the dumbest person in the room — the combination of age and humility creates unique value",
+          "topQuote": null
+        }
+      ]
+    }
+  ]
+}

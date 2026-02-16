@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import QuizApp from '../components/quiz/QuizApp';
+import quizData from '../data/quiz.json';
+---
+
+<BaseLayout title="Assessment" description="Take the PM Genome assessment. 24 scenarios, ~8 minutes, no wrong answers.">
+  <QuizApp client:load quizData={quizData} />
+</BaseLayout>
+
+<style is:global>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+</style>

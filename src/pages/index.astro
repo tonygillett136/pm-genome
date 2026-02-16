@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { DIMENSIONS } from '../lib/constants';
+---
+
+<BaseLayout title="PM Genome">
+  <!-- Hero -->
+  <section class="mx-auto max-w-4xl px-4 py-24 text-center">
+    <p class="mb-4 text-sm font-medium uppercase tracking-widest text-vision">Built from 302 podcast transcripts</p>
+    <h1 class="text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
+      Discover Your<br />
+      <span class="bg-gradient-to-r from-vision via-empathy to-growth bg-clip-text text-transparent">Product Leadership DNA</span>
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-text-muted">
+      We analyzed 280+ conversations with the world's best product leaders on Lenny's Podcast and discovered 7 distinct archetypes. Take an 8-minute assessment to find yours.
+    </p>
+    <div class="mt-10 flex items-center justify-center gap-4">
+      <a href="/quiz" class="rounded-xl bg-vision px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90">
+        Take the Assessment
+      </a>
+      <a href="/archetypes" class="rounded-xl border border-border px-8 py-4 text-lg font-semibold text-text-muted transition-colors hover:border-text-muted hover:text-text">
+        Explore Archetypes
+      </a>
+    </div>
+  </section>
+
+  <!-- 6 Dimensions -->
+  <section class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="mb-2 text-center text-sm font-medium uppercase tracking-widest text-text-muted">The 6 Dimensions</h2>
+    <p class="mb-12 text-center text-3xl font-bold">What we measure</p>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {DIMENSIONS.map((dim) => (
+        <div class="rounded-xl border border-border bg-bg-card p-6 transition-colors hover:border-bg-hover">
+          <div class="mb-3 h-2 w-8 rounded-full" style={`background-color: ${dim.color}`} />
+          <h3 class="mb-1 text-lg font-semibold">{dim.name}</h3>
+          <p class="text-sm text-text-muted">{dim.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="mx-auto max-w-4xl px-4 py-16">
+    <h2 class="mb-12 text-center text-3xl font-bold">How it works</h2>
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div class="text-center">
+        <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-bg-card text-2xl">1</div>
+        <h3 class="mb-2 font-semibold">We analyzed the transcripts</h3>
+        <p class="text-sm text-text-muted">AI extracted leadership patterns, frameworks, and decision styles from 302 episodes and 280+ guests.</p>
+      </div>
+      <div class="text-center">
+        <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-bg-card text-2xl">2</div>
+        <h3 class="mb-2 font-semibold">We discovered 7 archetypes</h3>
+        <p class="text-sm text-text-muted">Clustering revealed distinct product leadership styles — from Visionaries to Scientists to Growth Architects.</p>
+      </div>
+      <div class="text-center">
+        <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-bg-card text-2xl">3</div>
+        <h3 class="mb-2 font-semibold">You take the assessment</h3>
+        <p class="text-sm text-text-muted">24 scenario-based questions reveal your product DNA, matched leaders, blind spots, and a learning path.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="border-t border-border py-16">
+    <div class="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-12 px-4 text-center">
+      <div>
+        <p class="text-4xl font-extrabold text-vision">302</p>
+        <p class="text-sm text-text-muted">Transcripts analyzed</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-craft">280+</p>
+        <p class="text-sm text-text-muted">Leaders profiled</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-data">186K</p>
+        <p class="text-sm text-text-muted">Lines of conversation</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-empathy">7</p>
+        <p class="text-sm text-text-muted">Archetypes discovered</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-20 text-center">
+    <h2 class="mb-4 text-3xl font-bold">Ready to discover your archetype?</h2>
+    <p class="mb-8 text-text-muted">8 minutes. 24 scenarios. No wrong answers.</p>
+    <a href="/quiz" class="rounded-xl bg-vision px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90">
+      Take the Assessment
+    </a>
+  </section>
+</BaseLayout>

@@ -1,0 +1,94 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { title, description = 'Discover your product leadership DNA. Built from 302 conversations with the world\'s best product leaders on Lenny\'s Podcast.', ogImage = '/og-default.png' } = Astro.props;
+const fullTitle = title === 'PM Genome' ? title : `${title} | PM Genome`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="theme-color" content="#0F0F13" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>{fullTitle}</title>
+  </head>
+  <body class="min-h-screen">
+    <header class="border-b border-border">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <a href="/" class="text-xl font-bold tracking-tight">
+          <span class="text-vision">PM</span> Genome
+        </a>
+
+        <!-- Desktop nav -->
+        <div class="hidden items-center gap-6 text-sm text-text-muted md:flex">
+          <a href="/archetypes" class="transition-colors hover:text-text">Archetypes</a>
+          <a href="/leaders" class="transition-colors hover:text-text">Leaders</a>
+          <a href="/methodology" class="transition-colors hover:text-text">Methodology</a>
+          <a href="/quiz" class="rounded-lg bg-vision px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90">Take the Quiz</a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button
+          id="mobile-menu-btn"
+          class="flex h-10 w-10 items-center justify-center rounded-lg text-text-muted hover:bg-bg-card md:hidden"
+          aria-label="Toggle menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="5" x2="17" y2="5" />
+            <line x1="3" y1="10" x2="17" y2="10" />
+            <line x1="3" y1="15" x2="17" y2="15" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden border-t border-border md:hidden">
+        <div class="mx-auto max-w-6xl space-y-1 px-4 py-3">
+          <a href="/archetypes" class="block rounded-lg px-3 py-2 text-sm text-text-muted hover:bg-bg-card hover:text-text">Archetypes</a>
+          <a href="/leaders" class="block rounded-lg px-3 py-2 text-sm text-text-muted hover:bg-bg-card hover:text-text">Leaders</a>
+          <a href="/methodology" class="block rounded-lg px-3 py-2 text-sm text-text-muted hover:bg-bg-card hover:text-text">Methodology</a>
+          <a href="/quiz" class="mt-2 block rounded-lg bg-vision px-3 py-2 text-center text-sm font-medium text-white">Take the Quiz</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="border-t border-border py-8 text-center text-sm text-text-muted">
+      <div class="mx-auto max-w-6xl px-4">
+        <p>Built from 302 episodes of <a href="https://www.lennysnewsletter.com/podcast" class="text-text underline decoration-border hover:decoration-text-muted" target="_blank" rel="noopener">Lenny's Podcast</a>.</p>
+        <p class="mt-1">An experiment in AI-powered content analysis. Not affiliated with Lenny Rachitsky.</p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      btn?.addEventListener('click', () => {
+        menu?.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

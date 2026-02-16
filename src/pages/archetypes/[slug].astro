@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { DIMENSIONS } from '../../lib/constants';
+import archetypesData from '../../data/archetypes.json';
+import leadersData from '../../data/leaders.json';
+
+export function getStaticPaths() {
+  const archetypes = archetypesData.archetypes ?? [];
+  const leaders = (leadersData as any).leaders ?? [];
+
+  if (!archetypes.length) return [];
+
+  return archetypes.map((archetype: any) => ({
+    params: { slug: archetype.id },
+    props: {
+      archetype,
+      leaders: leaders.filter((l: any) => l.primaryArchetype === archetype.id),
+    },
+  }));
+}
+
+const { archetype, leaders } = Astro.props;
+---
+
+<BaseLayout
+  title={archetype.name}
+  description={`${archetype.name}: ${archetype.tagline}. Discover if this is your product leadership archetype.`}
+>
+  <div class="mx-auto max-w-4xl px-4 py-16">
+    <div class="mb-12">
+      <a href="/archetypes" class="mb-4 inline-block text-sm text-text-muted hover:text-text">&larr; All Archetypes</a>
+      <h1 class="mb-2 text-4xl font-extrabold tracking-tight">{archetype.name}</h1>
+      <p class="text-xl text-text-muted">{archetype.tagline}</p>
+    </div>
+
+    <section class="mb-12">
+      <h2 class="mb-4 text-lg font-semibold">Dimension Profile</h2>
+      <div class="rounded-xl border border-border bg-bg-card p-6">
+        <div class="space-y-3">
+          {DIMENSIONS.map((dim) => {
+            const score = archetype.dimensions?.[dim.id] ?? 0;
+            return (
+              <div>
+                <div class="mb-1 flex items-center justify-between text-sm">
+                  <span>{dim.name}</span>
+                  <span style={`color: ${dim.color}`}>{Math.round(score * 100)}%</span>
+                </div>
+                <div class="h-2 overflow-hidden rounded-full bg-border">
+                  <div
+                    class="h-full rounded-full"
+                    style={`width: ${score * 100}%; background-color: ${dim.color}`}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <p class="text-lg leading-relaxed text-text-muted">{archetype.description}</p>
+    </section>
+
+    <section class="mb-12 grid gap-6 md:grid-cols-2">
+      <div class="rounded-xl border border-border bg-bg-card p-6">
+        <h3 class="mb-4 text-sm font-medium uppercase tracking-widest text-data">Strengths</h3>
+        <ul class="space-y-2">
+          {(archetype.strengths ?? []).map((s: string) => (
+            <li class="flex items-start gap-2 text-sm">
+              <span class="mt-0.5 text-data">+</span>
+              <span>{s}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="rounded-xl border border-border bg-bg-card p-6">
+        <h3 class="mb-4 text-sm font-medium uppercase tracking-widest text-craft">Blind Spots</h3>
+        <ul class="space-y-2">
+          {(archetype.blindSpots ?? []).map((b: string) => (
+            <li class="flex items-start gap-2 text-sm">
+              <span class="mt-0.5 text-craft">!</span>
+              <span>{b}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    {archetype.growthEdge && (
+      <section class="mb-12">
+        <div class="rounded-xl border border-border bg-bg-card p-6">
+          <h3 class="mb-2 text-sm font-medium uppercase tracking-widest text-team">Growth Edge</h3>
+          <p class="text-text-muted">{archetype.growthEdge}</p>
+        </div>
+      </section>
+    )}
+
+    {leaders.length > 0 && (
+      <section class="mb-12">
+        <h2 class="mb-6 text-2xl font-bold">Leaders with this archetype</h2>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {leaders.slice(0, 20).map((leader: any) => (
+            <a
+              href={`/leaders/${leader.slug}`}
+              class="rounded-xl border border-border bg-bg-card p-4 transition-colors hover:border-bg-hover hover:bg-bg-hover"
+            >
+              <h3 class="font-medium">{leader.name}</h3>
+              <p class="text-sm text-text-muted">
+                {leader.title}{leader.company ? ` at ${leader.company}` : ''}
+              </p>
+            </a>
+          ))}
+        </div>
+        {leaders.length > 20 && (
+          <p class="mt-4 text-center text-sm text-text-muted">
+            and {leaders.length - 20} more leaders
+          </p>
+        )}
+      </section>
+    )}
+
+    <section class="text-center">
+      <a href="/quiz" class="rounded-xl bg-vision px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90">
+        Find Your Archetype
+      </a>
+    </section>
+  </div>
+</BaseLayout>

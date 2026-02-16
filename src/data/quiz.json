@@ -1,0 +1,658 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "totalQuestions": 24,
+    "questionsPerDimension": 4,
+    "estimatedMinutes": 8
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "scenario": "Your company's biggest feature launch in a year just shipped. Two weeks in, the core metric hasn't moved at all.",
+      "tier": 1,
+      "options": [
+        {
+          "id": "q01-a",
+          "text": "Pull the launch data apart segment by segment — the aggregate might be hiding a win in one cohort and a loss in another.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.2, "data-experimentation": 1.0, "growth-distribution": 0.3, "team-leadership": 0.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q01-b",
+          "text": "Get on the phone with 10 users who tried it and 10 who didn't. The numbers say 'what' but not 'why.'",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 0.2, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q01-c",
+          "text": "Zoom out — is the feature actually serving the right strategic bet, or did we build the right thing for the wrong future?",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.1, "team-leadership": 0.1, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q01-d",
+          "text": "Check the onboarding and activation flows — if users aren't even discovering the feature properly, the problem is distribution, not the feature itself.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.2, "data-experimentation": 0.2, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.1 }
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "scenario": "A senior engineer on your team pushes back hard on a spec you wrote, saying the approach is fundamentally wrong. The team is watching.",
+      "tier": 1,
+      "options": [
+        {
+          "id": "q02-a",
+          "text": "Invite them to write up their alternative approach and schedule time to evaluate both proposals with the team.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.2, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q02-b",
+          "text": "Ask them to walk you through the technical concerns in detail — there might be an insight you missed in the constraints.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 1.0, "data-experimentation": 0.2, "growth-distribution": 0.0, "team-leadership": 0.2, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q02-c",
+          "text": "Reframe the conversation around user outcomes — which approach better solves the core user problem, regardless of technical elegance?",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.1, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q02-d",
+          "text": "Propose running both approaches as an A/B test — let the data settle the debate rather than opinions.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.1, "team-leadership": 0.1, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "scenario": "You're a new PM at a company. In your first month, you realize the product roadmap has no clear connection to any measurable business outcomes.",
+      "tier": 1,
+      "options": [
+        {
+          "id": "q03-a",
+          "text": "Build a metrics tree connecting company goals to product bets, and use it to start prioritization conversations.",
+          "weights": { "strategic-vision": 0.3, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.1, "team-leadership": 0.1, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q03-b",
+          "text": "Interview every stakeholder to understand their vision — the roadmap might be disconnected because the strategy itself isn't aligned.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q03-c",
+          "text": "Map the roadmap against the user journey — the missing link might be that we're building features that don't address real user pain points.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q03-d",
+          "text": "Focus on shipping what's already committed quickly and well — earn trust through execution before trying to change the roadmap process.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.1, "team-leadership": 0.2, "user-empathy": 0.1 }
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "scenario": "Your CEO asks you to present next quarter's product strategy to the board in 48 hours. You have data but no narrative.",
+      "tier": 1,
+      "options": [
+        {
+          "id": "q04-a",
+          "text": "Start with the market shift — frame the strategy as a response to where the world is going, not just what users want today.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.1, "data-experimentation": 0.1, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q04-b",
+          "text": "Lead with three user stories that make the problem vivid, then connect each to a product bet with clear success criteria.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.2, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q04-c",
+          "text": "Build the story around the funnel — show where users are dropping off, what experiments you'll run, and the expected lift.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 0.3, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q04-d",
+          "text": "Structure it as a team capacity plan — what you'll ship, when, and the tradeoffs you're making to hit each milestone.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "scenario": "Your product has strong retention but new user growth has flatlined for two quarters. The exec team wants answers.",
+      "tier": 1,
+      "options": [
+        {
+          "id": "q05-a",
+          "text": "Audit every acquisition channel — map cost per acquisition, conversion rates, and identify which channels have room to scale.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 0.3, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q05-b",
+          "text": "Talk to churned trial users and people who considered your product but chose a competitor — the answer is in the non-users.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q05-c",
+          "text": "Challenge the assumption that you need new users — maybe the real opportunity is expanding revenue from existing users through upsell and expansion.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.3, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q05-d",
+          "text": "Run a rapid series of activation experiments — small changes to onboarding, signup flow, and first-use experience to find quick wins.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.2, "data-experimentation": 1.0, "growth-distribution": 0.3, "team-leadership": 0.0, "user-empathy": 0.1 }
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "scenario": "A designer on your team has a radically different vision for a key feature than what engineering scoped. Both have strong arguments.",
+      "tier": 1,
+      "options": [
+        {
+          "id": "q06-a",
+          "text": "Go back to user research — test both concepts with real users and let their reactions break the tie.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.1, "data-experimentation": 0.2, "growth-distribution": 0.0, "team-leadership": 0.1, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q06-b",
+          "text": "Facilitate a structured design review where both present their case and the team votes on criteria you define upfront.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.2, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q06-c",
+          "text": "Find the fastest path to testing both — scope down each to an MVP version and A/B test them in production.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.3, "data-experimentation": 1.0, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q06-d",
+          "text": "Evaluate which version ships faster with fewer dependencies — in the time debating, you could have learned from real usage.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.1, "growth-distribution": 0.2, "team-leadership": 0.1, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "scenario": "You're reviewing your product's analytics dashboard and notice a feature you launched 3 months ago has near-zero adoption.",
+      "tier": 1,
+      "options": [
+        {
+          "id": "q07-a",
+          "text": "Set up user sessions to watch people navigate around the feature — if they're not using it, they either can't find it or don't understand its value.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.1, "data-experimentation": 0.1, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q07-b",
+          "text": "Kill it. Zero adoption after 3 months means the market voted. Reallocate the resources to higher-impact work.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 1.0, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 0.1, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q07-c",
+          "text": "Check the discovery path — maybe the feature works great but it's buried. Test moving it to a prominent position or adding in-app prompts.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.2, "data-experimentation": 0.2, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q07-d",
+          "text": "Re-examine the original hypothesis — does this feature still align with where we're taking the product, or has the strategy shifted?",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 0.2 }
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "scenario": "Your team just missed a deadline by two weeks. The CEO is frustrated. Your team is demoralized. You need to address both.",
+      "tier": 1,
+      "options": [
+        {
+          "id": "q08-a",
+          "text": "Run a blameless retro with the team first — understand what broke in the process before communicating anything upward.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.2, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q08-b",
+          "text": "Cut scope for the next sprint to rebuild the team's confidence with a quick win, then gradually increase ambition.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q08-c",
+          "text": "Reframe the conversation with the CEO around outcomes, not timelines — show what you learned and how it changes the approach.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.0, "team-leadership": 0.2, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q08-d",
+          "text": "Dig into the data on what actually shipped versus what was planned — use it to set more realistic expectations and improve estimation.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.0, "team-leadership": 0.1, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "scenario": "Your biggest competitor just launched a feature that undercuts your core value proposition. Your sales team is panicking. Your CEO wants a response plan by Friday.",
+      "tier": 2,
+      "options": [
+        {
+          "id": "q09-a",
+          "text": "Don't panic-ship a copycat. Double down on what makes you differentiated — competitors can copy features but not your positioning.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.2, "team-leadership": 0.1, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q09-b",
+          "text": "Get on calls with 5 at-risk customers this week — understand if this is a real threat or sales noise before making any product moves.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q09-c",
+          "text": "Ship a fast, scrappy response to close the gap — not perfect, but enough to give sales a story while you build the real answer.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.2, "team-leadership": 0.1, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q09-d",
+          "text": "Analyze the competitor's distribution strategy — how are they getting this in front of customers? That's often more important than the feature itself.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.1 }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "scenario": "You have strong evidence that a beloved feature used by 15% of users is actually hurting conversion for the other 85%. Removing it would be controversial.",
+      "tier": 2,
+      "options": [
+        {
+          "id": "q10-a",
+          "text": "Run a controlled experiment — gradually reduce the feature's prominence and measure the impact on both cohorts before deciding.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q10-b",
+          "text": "Talk to power users first — understand their workflow so deeply that you can build something that serves them without hurting the majority.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.2, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q10-c",
+          "text": "Frame this as a strategic choice about who your product is for. If 85% of users are better served without it, the feature is in the wrong product.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q10-d",
+          "text": "Communicate the decision transparently to the team and affected users, with a clear migration path and timeline.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.3, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.2 }
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "scenario": "You're scaling from 3 PMs to 10. The founders want to preserve the 'scrappy startup' culture. You need to add process without killing speed.",
+      "tier": 2,
+      "options": [
+        {
+          "id": "q11-a",
+          "text": "Design lightweight rituals — weekly product reviews, a shared roadmap, and clear ownership areas. Enough structure to coordinate, not enough to suffocate.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.3, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q11-b",
+          "text": "Focus on hiring criteria — if you hire PMs who are strong autonomous operators, you need less process. Culture scales through people, not documents.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q11-c",
+          "text": "Build a shared metrics framework first — if every PM team knows their north star and how it connects to the company goal, they can be autonomous.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 1.0, "growth-distribution": 0.1, "team-leadership": 0.2, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q11-d",
+          "text": "Write a product strategy doc that's specific enough to enable independent decision-making — the PM equivalent of 'commander's intent.'",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "scenario": "Your freemium product has great adoption but terrible monetization. Only 2% of free users convert to paid. The board is pressuring you to improve unit economics.",
+      "tier": 2,
+      "options": [
+        {
+          "id": "q12-a",
+          "text": "Redesign the free-to-paid boundary — the issue is probably that free users get too much value without hitting a natural upgrade moment.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.1, "data-experimentation": 0.1, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q12-b",
+          "text": "Interview converted users about their 'aha moment' — then engineer more free users toward that experience.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q12-c",
+          "text": "Set up a conversion funnel experiment — test pricing tiers, feature gates, and upgrade prompts systematically to find the optimal configuration.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.3, "team-leadership": 0.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q12-d",
+          "text": "Step back and question the model — maybe freemium is wrong for this market. Consider usage-based pricing or a different go-to-market entirely.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.3, "team-leadership": 0.0, "user-empathy": 0.1 }
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "scenario": "Your product has accumulated significant technical debt. Engineering wants 6 weeks to refactor. Your CEO sees it as 6 weeks without new features.",
+      "tier": 2,
+      "options": [
+        {
+          "id": "q13-a",
+          "text": "Negotiate a hybrid approach — allocate 20% of each sprint to debt while continuing feature work. Sustained investment beats big-bang rewrites.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q13-b",
+          "text": "Quantify the debt in terms the CEO understands — show how it's slowing feature velocity, increasing bugs, and costing the business money.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.0, "team-leadership": 0.2, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q13-c",
+          "text": "Reframe the refactor as a strategic investment — connect it to the product vision and explain what it enables that can't be built on the current foundation.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.2, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q13-d",
+          "text": "Focus the refactor on the parts that affect users most — page load times, reliability, the things that directly impact retention and satisfaction.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.2, "data-experimentation": 0.0, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 1.0 }
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "scenario": "You're launching in a new market segment. Your data team says the segment looks promising based on TAM analysis, but you have zero direct customer insights.",
+      "tier": 2,
+      "options": [
+        {
+          "id": "q14-a",
+          "text": "Spend two weeks embedded with potential customers before building anything. TAM means nothing if you don't understand the buyer's real workflow.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q14-b",
+          "text": "Build the smallest possible version and launch it with a landing page — real demand is the only data point that matters.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.2, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q14-c",
+          "text": "Design a systematic market entry experiment — define success metrics, set a time-boxed learning phase, and commit to a go/no-go decision point.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q14-d",
+          "text": "Map the distribution channels for this segment first — if there's no efficient way to reach these customers, the TAM is irrelevant.",
+          "weights": { "strategic-vision": 0.3, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.1 }
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "scenario": "Two product teams in your organization are building overlapping features. Each team believes their approach is better. Neither wants to give up ownership.",
+      "tier": 2,
+      "options": [
+        {
+          "id": "q15-a",
+          "text": "Reorganize the team boundaries — this is a structural problem that won't be solved by negotiation. Clear ownership prevents future conflicts.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q15-b",
+          "text": "Define the success metric and let the data decide — run both as experiments with clear criteria for which approach wins.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.0, "team-leadership": 0.1, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q15-c",
+          "text": "Elevate the decision to the product strategy level — which approach better serves the long-term product vision? Use that as the tiebreaker.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.0, "growth-distribution": 0.1, "team-leadership": 0.2, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q15-d",
+          "text": "Put both teams in a room with actual users — let the customer perspective dissolve the internal politics.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 0.2, "user-empathy": 1.0 }
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "scenario": "Your product is growing 10% month-over-month organically. Leadership asks if you should invest in paid acquisition to accelerate growth.",
+      "tier": 2,
+      "options": [
+        {
+          "id": "q16-a",
+          "text": "Not yet — first understand and amplify the organic growth loops. Paid acquisition on top of a leaky funnel is just burning money faster.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q16-b",
+          "text": "Run a small paid experiment to understand unit economics — if CAC/LTV works, scale it. If not, you've learned cheaply.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.3, "team-leadership": 0.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q16-c",
+          "text": "Interview your best organic users to understand why they chose you — then build your paid messaging around those authentic reasons.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q16-d",
+          "text": "Invest the budget in making the product better instead — 10% organic growth that compounds is more valuable than paid growth that stops when the budget stops.",
+          "weights": { "strategic-vision": 0.3, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 0.2 }
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "scenario": "You discover that your most successful product decision was built on flawed data. The feature works, users love it, but the original rationale was wrong. Leadership doesn't know.",
+      "tier": 3,
+      "options": [
+        {
+          "id": "q17-a",
+          "text": "Fix the data pipeline and disclose the error to leadership. Then reframe the success around the real 'why' — rebuilding credibility on accurate foundations matters more than looking good.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q17-b",
+          "text": "Conduct user research to understand the actual reason the feature works — the data was wrong, but the instinct was right. Find the real story.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q17-c",
+          "text": "Use this as a leadership moment — share the mistake with your team to build a culture where intellectual honesty is valued over being right.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q17-d",
+          "text": "The feature works and users love it. Focus forward — use this as a lesson about the limits of data-driven decisions, but don't let it paralyze future bets.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.2, "data-experimentation": 0.0, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "scenario": "You've been promoted to lead the company's most important product area. On day one, you realize the team is deeply dysfunctional — low trust, unclear roles, and a backlog of broken promises to customers.",
+      "tier": 3,
+      "options": [
+        {
+          "id": "q18-a",
+          "text": "Start with 1:1s with every team member and key stakeholders. Understand the history before changing anything — trust is rebuilt through listening, not restructuring.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.3 }
+        },
+        {
+          "id": "q18-b",
+          "text": "Pick one broken promise to customers, fix it fast and visibly. Quick wins rebuild credibility with both the team and customers simultaneously.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.2, "user-empathy": 0.3 }
+        },
+        {
+          "id": "q18-c",
+          "text": "Write and share a clear product vision for the next 12 months. Dysfunction often stems from lack of direction — give people something to rally around.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q18-d",
+          "text": "Set up a clean data baseline — define metrics, instrument tracking, and establish weekly reviews. You can't fix what you can't measure.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.0, "team-leadership": 0.1, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "scenario": "Your product has achieved strong product-market fit in your initial market. The CEO wants to expand to enterprise. This would require significant changes to the product, team, and go-to-market.",
+      "tier": 3,
+      "options": [
+        {
+          "id": "q19-a",
+          "text": "Build a separate enterprise team that can move fast without disrupting the core product. Two-in-a-box: one team protects what works, another explores.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q19-b",
+          "text": "Start with the go-to-market motion, not the product — sign 5 design partners, sell what you have, and let their feedback tell you what to build.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 1.0, "team-leadership": 0.0, "user-empathy": 0.3 }
+        },
+        {
+          "id": "q19-c",
+          "text": "Map the enterprise user journey end-to-end — admin provisioning, SSO, audit logs. The product gaps aren't features, they're infrastructure.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q19-d",
+          "text": "Challenge the premise — does enterprise expansion align with your long-term vision, or is it a distraction? Not every company should go upmarket.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 0.1 }
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "scenario": "You're building an AI-powered feature that could 10x the product's value. But it's unpredictable — sometimes brilliant, sometimes embarrassingly wrong. Your brand reputation is on the line.",
+      "tier": 3,
+      "options": [
+        {
+          "id": "q20-a",
+          "text": "Ship it as a 'beta' or 'experimental' feature with clear guardrails. Set user expectations explicitly and collect feedback to improve rapidly.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 1.0, "data-experimentation": 0.2, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q20-b",
+          "text": "Design the UX to be transparent about AI confidence levels — let users see when the system is sure vs. guessing. Trust comes from honesty, not perfection.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.2, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q20-c",
+          "text": "Build a rigorous evaluation framework — define accuracy thresholds, automate regression testing, and only ship when the model meets your quality bar.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.1, "data-experimentation": 1.0, "growth-distribution": 0.0, "team-leadership": 0.1, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q20-d",
+          "text": "Ship it boldly. The window for AI differentiation is narrow — being first matters more than being perfect. Your competitors won't wait.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.3, "team-leadership": 0.0, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "scenario": "You realize your product has become a 'feature factory' — shipping lots of things but none of them are moving the needle. The team is busy but impact is flat.",
+      "tier": 3,
+      "options": [
+        {
+          "id": "q21-a",
+          "text": "Halt the roadmap and rewrite the strategy from scratch. Align every initiative to 2-3 big bets that could fundamentally change the trajectory.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.1, "team-leadership": 0.1, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q21-b",
+          "text": "Implement an impact review — for every feature shipped in the last 6 months, measure the actual outcome. Let the data show the team what's working and what isn't.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.0, "data-experimentation": 1.0, "growth-distribution": 0.0, "team-leadership": 0.1, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q21-c",
+          "text": "Go spend a week in the field with customers. The disconnect between shipping and impact usually means you've lost touch with what users actually need.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.0, "data-experimentation": 0.1, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q21-d",
+          "text": "Change the team structure — move from feature teams to outcome teams. When teams own metrics instead of features, they naturally focus on impact.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "scenario": "You're offered a once-in-a-career opportunity to build a new product from zero at your company. But it means leaving your current team, which you've spent two years building and is finally hitting its stride.",
+      "tier": 3,
+      "options": [
+        {
+          "id": "q22-a",
+          "text": "Take it — but only after ensuring a strong successor is in place and a transition plan protects the team's momentum. Leaders are measured by what thrives after they leave.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.2 }
+        },
+        {
+          "id": "q22-b",
+          "text": "Take it — zero-to-one is where the most learning and impact happens. Your current team is strong enough to continue without you, and that's a sign of success.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.2, "team-leadership": 0.1, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q22-c",
+          "text": "Before deciding, deeply understand the new product's users and market. Zero-to-one only works if you're building for a real problem. Validate first.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q22-d",
+          "text": "Negotiate to run both for 3 months — prototype the new product while winding down your current role. Test the opportunity before committing fully.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.3, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 0.0 }
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "scenario": "Your company is going through a major platform migration. The product will be in a degraded state for 3-6 months during the transition. Customers are worried. Your team is exhausted.",
+      "tier": 3,
+      "options": [
+        {
+          "id": "q23-a",
+          "text": "Create a customer advisory board — give your top customers a direct line to the migration team. Their feedback will keep you honest and their buy-in will keep them loyal.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 0.0, "data-experimentation": 0.0, "growth-distribution": 0.1, "team-leadership": 0.1, "user-empathy": 1.0 }
+        },
+        {
+          "id": "q23-b",
+          "text": "Break the migration into weekly milestones with visible progress. The team needs wins, and customers need to see momentum. Cadence is everything.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.3, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q23-c",
+          "text": "Use this as the inflection point to leap ahead of competitors — design the new platform around the future, not as a replica of the past.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.1, "data-experimentation": 0.0, "growth-distribution": 0.2, "team-leadership": 0.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q23-d",
+          "text": "Set up comprehensive monitoring and rollback capabilities — instrument everything so you can detect regressions instantly and protect the customer experience with data.",
+          "weights": { "strategic-vision": 0.0, "execution-craft": 0.2, "data-experimentation": 1.0, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 0.2 }
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "scenario": "After years of building, your product has achieved a dominant market position. Growth is decelerating naturally. The question at the all-hands is: what's next?",
+      "tier": 3,
+      "options": [
+        {
+          "id": "q24-a",
+          "text": "Invest in adjacent markets — use your distribution advantage to expand into complementary products. The platform play is the endgame.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.0, "growth-distribution": 1.0, "team-leadership": 0.1, "user-empathy": 0.1 }
+        },
+        {
+          "id": "q24-b",
+          "text": "Go deeper, not wider. The best moat is an experience so good that switching costs are emotional, not just practical. Polish everything.",
+          "weights": { "strategic-vision": 0.1, "execution-craft": 1.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 0.0, "user-empathy": 0.3 }
+        },
+        {
+          "id": "q24-c",
+          "text": "Bet on the next technology paradigm — AI, spatial computing, whatever comes next. Dominant positions are disrupted by platform shifts, not competitors.",
+          "weights": { "strategic-vision": 1.0, "execution-craft": 0.0, "data-experimentation": 0.2, "growth-distribution": 0.1, "team-leadership": 0.0, "user-empathy": 0.0 }
+        },
+        {
+          "id": "q24-d",
+          "text": "Invest in your people and culture — the next chapter will be written by the team you build. Focus on attracting world-class talent who see the next opportunity.",
+          "weights": { "strategic-vision": 0.2, "execution-craft": 0.0, "data-experimentation": 0.0, "growth-distribution": 0.0, "team-leadership": 1.0, "user-empathy": 0.1 }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ResultsApp from '../components/results/ResultsApp';
+import quizData from '../data/quiz.json';
+import archetypesData from '../data/archetypes.json';
+import leadersData from '../data/leaders.json';
+import learningPathsData from '../data/learning-paths.json';
+---
+
+<BaseLayout title="Your Results" description="Your PM Genome results — discover your product leadership archetype, matched leaders, and personalized learning path.">
+  <ResultsApp
+    client:load
+    quizData={quizData}
+    archetypesData={archetypesData}
+    leadersData={leadersData}
+    learningPathsData={learningPathsData}
+  />
+</BaseLayout>
