@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #0F0F13;
+  color: #E0E0E6;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 100px;
+  position: relative;
+  overflow: hidden;
+}
+.label {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #6366F1;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 56px;
+}
+.dimensions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.dim {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.dim .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+.dim .content {}
+.dim .name {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.dim .desc {
+  font-size: 19px;
+  color: #9CA3AF;
+  line-height: 1.4;
+}
+.brand {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.brand .logo {
+  font-size: 18px;
+  color: #9CA3AF;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.brand .dots {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #4B5563;
+  letter-spacing: 4px;
+}
+</style>
+</head>
+<body>
+<div>
+  <div class="label">The Framework</div>
+  <h1>We scored every leader on 6 dimensions</h1>
+  <div class="dimensions">
+    <div class="dim">
+      <div class="dot" style="background: #6366F1;"></div>
+      <div class="content">
+        <div class="name">Strategic Vision</div>
+        <div class="desc">Direction-setting, first principles, long-term bets</div>
+      </div>
+    </div>
+    <div class="dim">
+      <div class="dot" style="background: #F59E0B;"></div>
+      <div class="content">
+        <div class="name">Execution &amp; Craft</div>
+        <div class="desc">Shipping velocity, quality obsession, design excellence</div>
+      </div>
+    </div>
+    <div class="dim">
+      <div class="dot" style="background: #10B981;"></div>
+      <div class="content">
+        <div class="name">Data &amp; Experimentation</div>
+        <div class="desc">A/B testing, evidence-based decisions, metrics</div>
+      </div>
+    </div>
+    <div class="dim">
+      <div class="dot" style="background: #EF4444;"></div>
+      <div class="content">
+        <div class="name">Growth &amp; Distribution</div>
+        <div class="desc">Growth loops, PLG, viral mechanics, channels</div>
+      </div>
+    </div>
+    <div class="dim">
+      <div class="dot" style="background: #8B5CF6;"></div>
+      <div class="content">
+        <div class="name">Team &amp; Leadership</div>
+        <div class="desc">Hiring, culture, coaching, org design</div>
+      </div>
+    </div>
+    <div class="dim">
+      <div class="dot" style="background: #EC4899;"></div>
+      <div class="content">
+        <div class="name">User Empathy</div>
+        <div class="desc">Customer obsession, user research, design thinking</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="brand">
+  <div class="logo">PM Genome</div>
+  <div class="dots">3 / 10</div>
+</div>
+</body>
+</html>

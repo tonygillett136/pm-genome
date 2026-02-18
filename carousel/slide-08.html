@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #0F0F13;
+  color: #E0E0E6;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 100px;
+  position: relative;
+  overflow: hidden;
+}
+.label {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #6366F1;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 56px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.feature .arrow {
+  font-size: 24px;
+  color: #6366F1;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.feature .content {}
+.feature .fname {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.feature .fdesc {
+  font-size: 18px;
+  color: #6B7280;
+  line-height: 1.4;
+}
+.brand {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.brand .logo {
+  font-size: 18px;
+  color: #9CA3AF;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.brand .dots {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #4B5563;
+  letter-spacing: 4px;
+}
+</style>
+</head>
+<body>
+<div>
+  <div class="label">Your Results</div>
+  <h1>Take the quiz, get your product DNA</h1>
+  <div class="features">
+    <div class="feature">
+      <div class="arrow">&rarr;</div>
+      <div class="content">
+        <div class="fname">Your archetype match</div>
+        <div class="fdesc">Discover which of the 7 types fits you best</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="arrow">&rarr;</div>
+      <div class="content">
+        <div class="fname">6-dimension radar chart</div>
+        <div class="fdesc">See your unique strengths profile visualized</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="arrow">&rarr;</div>
+      <div class="content">
+        <div class="fname">Top 5 matched leaders</div>
+        <div class="fdesc">Find out which product leaders think like you</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="arrow">&rarr;</div>
+      <div class="content">
+        <div class="fname">Your blind spots</div>
+        <div class="fdesc">Understand where you might be under-indexing</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="arrow">&rarr;</div>
+      <div class="content">
+        <div class="fname">Personalized learning path</div>
+        <div class="fdesc">Curated resources to develop your growth edges</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="arrow">&rarr;</div>
+      <div class="content">
+        <div class="fname">Shareable results card</div>
+        <div class="fdesc">Show your product DNA to your network</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="brand">
+  <div class="logo">PM Genome</div>
+  <div class="dots">8 / 10</div>
+</div>
+</body>
+</html>

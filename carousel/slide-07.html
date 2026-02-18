@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #0F0F13;
+  color: #E0E0E6;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 100px;
+  position: relative;
+  overflow: hidden;
+}
+.archetype-badge {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #EF4444;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 100px;
+}
+h1 {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+  color: #EF4444;
+}
+.tagline {
+  font-size: 26px;
+  color: #9CA3AF;
+  font-style: italic;
+  margin-bottom: 48px;
+}
+.top-dim {
+  font-size: 22px;
+  color: #E0E0E6;
+  margin-bottom: 48px;
+  padding: 20px 28px;
+  background: rgba(239, 68, 68, 0.08);
+  border-radius: 12px;
+  border-left: 4px solid #EF4444;
+}
+.top-dim strong {
+  color: #EF4444;
+  font-weight: 700;
+}
+.leaders-label {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #6B7280;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+.leaders {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+.leader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.leader .avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.15);
+  border: 2px solid rgba(239, 68, 68, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #EF4444;
+  flex-shrink: 0;
+}
+.leader .info .lname {
+  font-size: 22px;
+  font-weight: 600;
+}
+.leader .info .ltitle {
+  font-size: 16px;
+  color: #6B7280;
+}
+.description {
+  font-size: 20px;
+  color: #6B7280;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 32px;
+}
+.brand {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.brand .logo {
+  font-size: 18px;
+  color: #9CA3AF;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.brand .dots {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #4B5563;
+  letter-spacing: 4px;
+}
+</style>
+</head>
+<body>
+<div>
+  <div class="archetype-badge">Archetype 04</div>
+  <h1>The Growth Architect</h1>
+  <div class="tagline">"Distribution is the real product"</div>
+  <div class="top-dim">Top dimension: <strong>Growth &amp; Distribution (78%)</strong></div>
+  <div class="leaders-label">Notable Growth Architects</div>
+  <div class="leaders">
+    <div class="leader">
+      <div class="avatar">EV</div>
+      <div class="info">
+        <div class="lname">Elena Verna</div>
+        <div class="ltitle">Head of Growth, Lovable</div>
+      </div>
+    </div>
+    <div class="leader">
+      <div class="avatar">AD</div>
+      <div class="info">
+        <div class="lname">April Dunford</div>
+        <div class="ltitle">Positioning Expert & Author</div>
+      </div>
+    </div>
+    <div class="leader">
+      <div class="avatar">AJ</div>
+      <div class="info">
+        <div class="lname">Andy Johns</div>
+        <div class="ltitle">Former VP Growth, Wealthfront / Facebook / Twitter</div>
+      </div>
+    </div>
+    <div class="leader">
+      <div class="avatar">CB</div>
+      <div class="info">
+        <div class="lname">Claire Butler</div>
+        <div class="ltitle">Head of Go-to-Market & Growth, Figma</div>
+      </div>
+    </div>
+  </div>
+  <div class="description">
+    Growth Architects see every product decision through the lens of distribution. They obsess over growth loops, viral coefficients, and channel strategy.
+  </div>
+</div>
+<div class="brand">
+  <div class="logo">PM Genome</div>
+  <div class="dots">7 / 10</div>
+</div>
+</body>
+</html>
