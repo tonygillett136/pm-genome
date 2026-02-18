@@ -46,3 +46,5 @@ export const DIMENSIONS = [
 export type DimensionId = (typeof DIMENSIONS)[number]['id'];
 
 export const DIMENSION_IDS = DIMENSIONS.map((d) => d.id);
+
+export const BASE_PATH = '/pm-genome';

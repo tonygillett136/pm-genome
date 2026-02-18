@@ -69,7 +69,7 @@ export default function ResultsApp({
     // Ensure URL has the encoded answers for sharing
     if (!encoded) {
       const enc = encodeAnswers(answers, quizData.questions.length);
-      window.history.replaceState(null, '', `/results?s=${enc}`);
+      window.history.replaceState(null, '', `/pm-genome/results?s=${enc}`);
     }
   }, []);
 
@@ -78,7 +78,7 @@ export default function ResultsApp({
       <div className="mx-auto max-w-2xl px-4 py-20 text-center">
         <p className="mb-6 text-xl text-[#9CA3AF]">{error}</p>
         <a
-          href="/quiz"
+          href="/pm-genome/quiz"
           className="rounded-xl bg-[#6366F1] px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90"
         >
           Take the Assessment
@@ -247,7 +247,7 @@ export default function ResultsApp({
       {/* Retake CTA */}
       <section className="text-center">
         <a
-          href="/quiz"
+          href="/pm-genome/quiz"
           className="text-sm text-[#9CA3AF] underline hover:text-[#F0F0F5]"
           onClick={() => {
             try { localStorage.removeItem('pm-genome-quiz'); } catch {}

@@ -37,7 +37,7 @@ export default function QuizApp({ quizData }: Props) {
       const timer = setTimeout(() => {
         const scores = computeScores(answers, quizData.questions);
         const encoded = encodeAnswers(answers, quizData.questions.length);
-        window.location.href = `/results?s=${encoded}`;
+        window.location.href = `/pm-genome/results?s=${encoded}`;
       }, 1500);
       return () => clearTimeout(timer);
     }

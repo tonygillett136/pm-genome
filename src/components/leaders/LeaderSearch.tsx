@@ -83,7 +83,7 @@ export default function LeaderSearch({ leaders, archetypes }: Props) {
           return (
             <a
               key={leader.id}
-              href={`/leaders/${leader.slug}`}
+              href={`/pm-genome/leaders/${leader.slug}`}
               className="group rounded-xl border border-[#2A2A3A] bg-[#1A1A23] p-4 transition-colors hover:border-[#24243A] hover:bg-[#24243A]"
             >
               <h3 className="font-medium group-hover:text-[#6366F1]">{leader.name}</h3>
