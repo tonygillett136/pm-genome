@@ -88,7 +88,7 @@ export default function LearningPath({ topDimensions, bottomDimensions, paths }:
                     <div>
                       <h4 className="font-medium">
                         <a
-                          href={`/pm-genome/leaders/${ep.leaderId}`}
+                          href={`/leaders/${ep.leaderId}`}
                           className="hover:text-[#6366F1]"
                         >
                           {ep.leaderName}

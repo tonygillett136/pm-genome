@@ -31,7 +31,7 @@ const { leader, primaryArchetype, secondaryArchetype } = Astro.props;
 >
   <div class="mx-auto max-w-4xl px-4 py-16">
     <div class="mb-12">
-      <a href="/pm-genome/leaders" class="mb-4 inline-block text-sm text-text-muted hover:text-text">&larr; All Leaders</a>
+      <a href="/leaders" class="mb-4 inline-block text-sm text-text-muted hover:text-text">&larr; All Leaders</a>
       <h1 class="mb-2 text-4xl font-extrabold tracking-tight">{leader.name}</h1>
       <p class="text-lg text-text-muted">
         {leader.title}{leader.company ? ` at ${leader.company}` : ''}
@@ -42,7 +42,7 @@ const { leader, primaryArchetype, secondaryArchetype } = Astro.props;
       <div class="mt-4 flex flex-wrap gap-2">
         {primaryArchetype && (
           <a
-            href={`/pm-genome/archetypes/${primaryArchetype.id}`}
+            href={`/archetypes/${primaryArchetype.id}`}
             class="rounded-lg bg-vision/10 px-3 py-1.5 text-sm font-medium text-vision hover:bg-vision/20"
           >
             {primaryArchetype.name}
@@ -50,7 +50,7 @@ const { leader, primaryArchetype, secondaryArchetype } = Astro.props;
         )}
         {secondaryArchetype && (
           <a
-            href={`/pm-genome/archetypes/${secondaryArchetype.id}`}
+            href={`/archetypes/${secondaryArchetype.id}`}
             class="rounded-lg bg-team/10 px-3 py-1.5 text-sm font-medium text-team hover:bg-team/20"
           >
             {secondaryArchetype.name}
@@ -141,7 +141,7 @@ const { leader, primaryArchetype, secondaryArchetype } = Astro.props;
 
     <section class="text-center">
       <p class="mb-4 text-text-muted">Want to know how you compare?</p>
-      <a href="/pm-genome/quiz" class="rounded-xl bg-vision px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90">
+      <a href="/quiz" class="rounded-xl bg-vision px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90">
         Take the Assessment
       </a>
     </section>

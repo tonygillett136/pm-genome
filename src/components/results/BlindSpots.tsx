@@ -51,7 +51,7 @@ export default function BlindSpots({ bottomDimensions, scores, leaders }: Props)
                 {topInDim.map((leader) => (
                   <a
                     key={leader.id}
-                    href={`/pm-genome/leaders/${leader.slug}`}
+                    href={`/leaders/${leader.slug}`}
                     className="rounded-lg border border-[#2A2A3A] px-3 py-1.5 text-sm transition-colors hover:border-[#6366F1]/50 hover:bg-[#24243A]"
                   >
                     {leader.name}

@@ -2,7 +2,7 @@
 
 Interactive product leadership self-assessment built from 302 Lenny's Podcast transcripts. PMs take a 24-question scenario-based quiz to discover their product leadership archetype, matched leaders, blind spots, and personalized learning path.
 
-**Live**: https://gillett-projects.com/pm-genome/
+**Live**: https://pm-genome.gillett-projects.com/
 
 ## Stack
 
@@ -19,7 +19,7 @@ Interactive product leadership self-assessment built from 302 Lenny's Podcast tr
 npm run dev          # Dev server (hot reload)
 npm run build        # Production build → dist/ (297 pages, ~7s)
 npx astro preview    # Serve built dist/ locally
-npm run build && mkdir -p dist-deploy/pm-genome && cp -r dist/* dist-deploy/pm-genome/ && npx wrangler pages deploy dist-deploy --project-name pm-genome  # Deploy to Cloudflare Pages
+npx wrangler pages deploy dist --project-name pm-genome  # Deploy to Cloudflare Pages
 ```
 
 ## Architecture

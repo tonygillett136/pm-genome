@@ -10,7 +10,7 @@ The community responded with the obvious things: RAG chatbots, search tools, sum
 
 Not "what did guest X say about metrics?" but rather: across all these conversations, what distinct *types* of product leader emerge? And could you build something that lets any PM discover which type they are?
 
-That's what I built. It's called [The PM Genome Project](https://gillett-projects.com/pm-genome/), and it's live now. Here's how it works, and what I found.
+That's what I built. It's called [The PM Genome Project](https://pm-genome.gillett-projects.com/), and it's live now. Here's how it works, and what I found.
 
 ---
 
@@ -142,7 +142,7 @@ A few things surprised me:
 
 The assessment is free, takes about eight minutes, and doesn't require sign-up or any personal information. Your answers stay in your browser.
 
-**[Take the PM Genome Assessment](https://gillett-projects.com/pm-genome/quiz)**
+**[Take the PM Genome Assessment](https://pm-genome.gillett-projects.com/quiz)**
 
 I'd genuinely love to hear what archetype you get and whether it rings true. The best feedback is "that's weirdly accurate" or "that's completely wrong" — both are useful.
 

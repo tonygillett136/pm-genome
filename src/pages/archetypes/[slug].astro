@@ -28,7 +28,7 @@ const { archetype, leaders } = Astro.props;
 >
   <div class="mx-auto max-w-4xl px-4 py-16">
     <div class="mb-12">
-      <a href="/pm-genome/archetypes" class="mb-4 inline-block text-sm text-text-muted hover:text-text">&larr; All Archetypes</a>
+      <a href="/archetypes" class="mb-4 inline-block text-sm text-text-muted hover:text-text">&larr; All Archetypes</a>
       <h1 class="mb-2 text-4xl font-extrabold tracking-tight">{archetype.name}</h1>
       <p class="text-xl text-text-muted">{archetype.tagline}</p>
     </div>
@@ -102,7 +102,7 @@ const { archetype, leaders } = Astro.props;
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {leaders.slice(0, 20).map((leader: any) => (
             <a
-              href={`/pm-genome/leaders/${leader.slug}`}
+              href={`/leaders/${leader.slug}`}
               class="rounded-xl border border-border bg-bg-card p-4 transition-colors hover:border-bg-hover hover:bg-bg-hover"
             >
               <h3 class="font-medium">{leader.name}</h3>
@@ -121,7 +121,7 @@ const { archetype, leaders } = Astro.props;
     )}
 
     <section class="text-center">
-      <a href="/pm-genome/quiz" class="rounded-xl bg-vision px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90">
+      <a href="/quiz" class="rounded-xl bg-vision px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-90">
         Find Your Archetype
       </a>
     </section>

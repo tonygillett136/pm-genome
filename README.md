@@ -4,7 +4,7 @@
 
 An interactive self-assessment built from 302 Lenny's Podcast transcripts. Take a 24-question scenario-based quiz to discover your product leadership archetype, matched leaders, blind spots, and personalised learning path.
 
-**Live at [gillett-projects.com/pm-genome](https://gillett-projects.com/pm-genome/)**
+**Live at [pm-genome.gillett-projects.com](https://pm-genome.gillett-projects.com/)**
 
 ---
 
@@ -84,7 +84,7 @@ npx astro preview    # Serve built site locally
 ## Deploy
 
 ```bash
-npm run build && mkdir -p dist-deploy/pm-genome && cp -r dist/* dist-deploy/pm-genome/ && npx wrangler pages deploy dist-deploy --project-name pm-genome
+npx wrangler pages deploy dist --project-name pm-genome
 ```
 
 ## Data Pipeline
